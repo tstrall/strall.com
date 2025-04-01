@@ -14,7 +14,7 @@ This file tracks the actual steps needed to bring `strall.com` online as a worki
 
 ## 🧱 Setup: Hugo Site (Local)
 
-- [ ] Initialize Hugo site inside repo
+- [x] Initialize Hugo site inside repo
 - [ ] Create homepage (`content/_index.md`) and basic layout
 - [ ] Add one article (`content/posts/...`) as a starting point
 - [ ] Verify local build using `hugo server`

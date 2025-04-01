@@ -1,4 +1,4 @@
-# 🚀 Getting Started
+# Getting Started
 
 This guide walks you through launching your own **serverless, HTTPS-enabled static website** on AWS using Hugo and Terraform — starting from this repo.
 

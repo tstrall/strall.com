@@ -8,7 +8,7 @@ Want to create your own **serverless, HTTPS-enabled static website** on AWS?
 
 This repo is designed as a starting point for anyone who owns a domain name and wants to deploy a clean, fast, and fully serverless website using the same tools and infrastructure behind [strall.com](https://strall.com).
 
-The site is built using [Hugo](https://gohugo.io/) and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/tstrall/aws-iac), configured with [`aws-config`](https://github.com/tstrall/aws-config).
+The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/tstrall/aws-iac), configured with [`aws-config`](https://github.com/tstrall/aws-config).
 
 ### ✅ Get Started
 
@@ -17,12 +17,13 @@ The site is built using [Hugo](https://gohugo.io/) and deployed to AWS using mod
 3. Add your own content (Markdown, images, custom pages)
 4. Configure your domain (Route 53 or external)
 5. Deploy using Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac)
+6. Optional: use provided [scripts](./scripts) to install Hugo, GitHub CLI, and jq
 
 ---
 
 ## 🚀 What's Included
 
-- Hugo-based static site
+- Hugo-based static site using PaperMod
 - Markdown-powered articles and documentation
 - Deployment to S3 + CloudFront with HTTPS via ACM
 - DNS hosted with Route 53
@@ -38,7 +39,7 @@ content/            # Articles, homepage, and post content
 layouts/            # Hugo templates
 static/             # Static assets (e.g., CSS, images)
 config.toml         # Hugo site configuration
-deploy/             # Optional deployment scripts
+scripts/            # Setup scripts for local development
 ```
 
 ---
@@ -51,7 +52,8 @@ This infrastructure is designed to have low operational overhead. You’ll be pa
 - Any data transfer out from CloudFront (~$0.085/GB after Free Tier)
 - S3 storage and requests (minimal for most static sites)
 
-Actual charges will depend on your usage and AWS region. See [usage](https://strall.com/usage) for real-world examples from this deployment. storage, bandwidth, request volume, and DNS charges.
+Actual charges will depend on your usage and AWS region — including storage, bandwidth, request volume, and DNS charges.  
+See [usage](https://strall.com/usage) for real-world examples from this deployment.
 
 ---
 
