@@ -2,20 +2,18 @@
 
 This is the source code and content for [strall.com](https://strall.com) — a personal portfolio and demo hub built using my open-source AWS infrastructure framework.
 
-The site is built using [Hugo](https://gohugo.io/) and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/tstrall/aws-iac), configured with [`aws-config`](https://github.com/tstrall/aws-config).
-
----
-
 ## 🛠️ Build Your Own Serverless Static Website
 
 Want to create your own **serverless, HTTPS-enabled static website** on AWS?
 
 This repo is designed as a starting point for anyone who owns a domain name and wants to deploy a clean, fast, and fully serverless website using the same tools and infrastructure behind [strall.com](https://strall.com).
 
+The site is built using [Hugo](https://gohugo.io/) and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/tstrall/aws-iac), configured with [`aws-config`](https://github.com/tstrall/aws-config).
+
 ### ✅ Get Started
 
 1. **Fork this repo**
-2. Follow the [GitHub Project Board](https://github.com/tstrall/strall.com/projects/1)
+2. Follow the [Getting Started Guide](./GETTING_STARTED.md)
 3. Add your own content (Markdown, images, custom pages)
 4. Configure your domain (Route 53 or external)
 5. Deploy using Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac)
