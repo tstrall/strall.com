@@ -1,0 +1,21 @@
+baseURL = "https://strall.com/"
+languageCode = "en-us"
+title = "strall.com"
+theme = "PaperMod"
+
+[params]
+  author = "Ted Strall"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Articles"
+    url = "/posts/"
+    weight = 2

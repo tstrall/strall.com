@@ -1,0 +1,30 @@
+# Hugo output
+/public/
+/resources/
+hugo_stats.json
+.hugo_build.lock
+
+# Build files
+.DS_Store
+*.log
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Go artifacts
+/go/
+*.test
+*.exe
+*.out
+
+# Submodules if not tracking
+themes/*
+
+# Ignore hugo.toml if you switch to config.toml
+hugo.toml
