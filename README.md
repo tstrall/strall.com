@@ -57,9 +57,7 @@ Actual charges will depend on your usage and AWS region. See [usage](https://str
 
 ---
 
-
-
-## 📍 Links
+## 📎 Links
 
 - 🌍 [Live Site](https://strall.com)
 - 📘 [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)
@@ -67,6 +65,12 @@ Actual charges will depend on your usage and AWS region. See [usage](https://str
 - 🧠 [Latest Article](https://strall.com/posts/config-driven-aws)
 - 💼 [LinkedIn](https://www.linkedin.com/in/ted-strall-1057b44/)
 - 📂 [GitHub Profile](https://github.com/tstrall)
+
+---
+
+## 📜 License
+
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 
