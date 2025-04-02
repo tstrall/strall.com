@@ -10,14 +10,26 @@ This repo is designed as a starting point for anyone who owns a domain name and 
 
 The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/tstrall/aws-iac), configured with [`aws-config`](https://github.com/tstrall/aws-config).
 
-### ✅ Get Started
+---
 
-1. **Fork this repo**
+## 🧭 Choose Your Starting Point
+
+- **Option A: Fork this repo**  
+  Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
+
+- **Option B: Start fresh**  
+  Create your own repo, run `hugo new site .`, and follow the [deployment guide](https://github.com/tstrall/aws-deployment-guide) to connect it to reusable AWS infrastructure.
+
+---
+
+## ✅ Get Started
+
+1. **Fork this repo** (if using Option A)
 2. Follow the [Getting Started Guide](./GETTING_STARTED.md)
 3. Add your own content (Markdown, images, custom pages)
 4. Configure your domain (Route 53 or external)
 5. Deploy using Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac)
-6. Optional: use provided [scripts](./scripts) to install Hugo, GitHub CLI, and jq
+6. Optional: use provided [scripts](./scripts) to install Hugo (Linux, Mac, WSL)
 
 ---
 
@@ -62,6 +74,7 @@ See [usage](https://strall.com/usage) for real-world examples from this deployme
 - 🌍 [Live Site](https://strall.com)
 - 📘 [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)
 - ⚙️ [aws-config GitHub Repo](https://github.com/tstrall/aws-config)
+- 📗 [aws-deployment-guide](https://github.com/tstrall/aws-deployment-guide)
 - 🧠 [Latest Article](https://strall.com/posts/config-driven-aws)
 - 💼 [LinkedIn](https://www.linkedin.com/in/ted-strall-1057b44/)
 - 📂 [GitHub Profile](https://github.com/tstrall)
