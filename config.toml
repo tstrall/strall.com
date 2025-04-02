@@ -19,3 +19,18 @@ theme = "PaperMod"
     name = "Articles"
     url = "/posts/"
     weight = 2
+  [[menu.main]]
+    identifier = "open-source"
+    name = "Open Source"
+    url = "/open-source/"
+    weight = 3
+  [[menu.main]]
+    identifier = "aws-exams"
+    name = "AWS Exams"
+    url = "/aws-exams/"
+    weight = 4
+  [[menu.main]]
+    identifier = "about"
+    name = "Aboout"
+    url = "/about/"
+    weight = 99
