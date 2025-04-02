@@ -1,4 +1,4 @@
-# 🚀 Getting Started
+# Getting Started
 
 This guide walks you through creating your own serverless static website by forking and customizing this repository.
 
@@ -10,7 +10,7 @@ This guide walks you through creating your own serverless static website by fork
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
 
 - **Option B: Start fresh**  
-  Create your own repo, run `hugo new site .`, and follow the [deployment guide](https://github.com/tstrall/aws-deployment-guide) to connect it to reusable AWS infrastructure.
+Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
 ---
 
@@ -70,4 +70,4 @@ Visit [http://localhost:1313](http://localhost:1313) to see your site.
 
 Use the Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac) and configuration from [`aws-config`](https://github.com/tstrall/aws-config) to deploy to S3 + CloudFront with HTTPS and DNS support.
 
-Refer to the [deployment guide](https://github.com/tstrall/aws-deployment-guide) for detailed setup.
+Refer to the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) for detailed setup instructions.

@@ -18,7 +18,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
 
 - **Option B: Start fresh**  
-  Create your own repo, run `hugo new site .`, and follow the [deployment guide](https://github.com/tstrall/aws-deployment-guide) to connect it to reusable AWS infrastructure.
+  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
 ---
 
@@ -33,7 +33,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
 
 ---
 
-## 🚀 What's Included
+## What's Included
 
 - Hugo-based static site using PaperMod
 - Markdown-powered articles and documentation
@@ -44,7 +44,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
 
 ---
 
-## 📄 Content Structure
+## Content Structure
 
 ```text
 content/            # Articles, homepage, and post content
@@ -56,7 +56,7 @@ scripts/            # Setup scripts for local development
 
 ---
 
-## 📃 Usage and Cost
+## Usage and Cost
 
 This infrastructure is designed to have low operational overhead. You’ll be paying for:
 
@@ -69,7 +69,7 @@ See [usage](https://strall.com/usage) for real-world examples from this deployme
 
 ---
 
-## 📎 Links
+## Links
 
 - 🌍 [Live Site](https://strall.com)
 - 📘 [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)
@@ -81,13 +81,13 @@ See [usage](https://strall.com/usage) for real-world examples from this deployme
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Built and maintained by [tstrall](https://strall.com).
 
