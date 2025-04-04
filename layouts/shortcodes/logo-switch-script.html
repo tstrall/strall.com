@@ -1,0 +1,23 @@
+<script>
+  function updateThemeLogos() {
+    const isDark = document.body.classList.contains("dark");
+    document.querySelectorAll(".theme-switch-logo").forEach(img => {
+      const light = img.dataset.light;
+      const dark = img.dataset.dark;
+      if (light && dark) {
+        img.src = isDark ? dark : light;
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    updateThemeLogos();
+
+    const toggle = document.getElementById("theme-toggle");
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        setTimeout(updateThemeLogos, 10);
+      });
+    }
+  });
+</script>

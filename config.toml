@@ -1,4 +1,4 @@
-baseURL = "https://strall.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "strall.com"
 theme = "PaperMod"
@@ -9,6 +9,10 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
+
+[params.assets]
+  favicon = "/assets/logo/favicon-32x32.png"
+  customJS = ["js/logo-theme-switch.js"]
 
 [menu]
   [[menu.main]]
@@ -34,3 +38,10 @@ theme = "PaperMod"
     name = "Aboout"
     url = "/about/"
     weight = 99
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      attribute = true
