@@ -6,7 +6,7 @@ categories: ["Architecture", "AWS", "Infrastructure as Code"]
 tags: ["aws", "terraform", "design principles", "parameter store", "infrastructure", "automation"]
 ---
 
-# Configuration-Driven AWS Architecture: Core Design Principles
+---
 
 This article outlines the core design principles behind a configuration-driven approach to AWS infrastructure.
 
@@ -16,7 +16,7 @@ If you're looking to implement infrastructure that supports dynamic environments
 
 ---
 
-## Why Design Principles Matter
+### Why Design Principles Matter
 
 Without a consistent set of principles, infrastructure can quickly become hard to scale, debug, or evolve. This approach is informed by real-world needs—where teams must deliver quickly, isolate environments safely, and maintain visibility into what's deployed.
 
@@ -24,33 +24,33 @@ The following principles serve as a foundation for building systems that are mod
 
 ---
 
-## Core Design Principles
+### Core Design Principles
 
-### Build Once, Deploy Anywhere
+#### Build Once, Deploy Anywhere
 
 Terraform modules are reusable across environments and AWS accounts. They don’t include hardcoded values. The same component can be deployed anywhere by providing configuration through AWS Parameter Store.
 
 ---
 
-### Configuration Is the Source of Truth
+#### Configuration Is the Source of Truth
 
 Only components defined in the [`aws-config`](https://github.com/tstrall/aws-config) repository are eligible to be deployed. Terraform fails fast if configuration is missing. All changes to infrastructure flow through Git, enabling full visibility and auditability.
 
 ---
 
-### Immutable Infrastructure
+#### Immutable Infrastructure
 
 Infrastructure is never patched in place. Instead, new versions are deployed side by side and swapped in by updating configuration (e.g., updating a runtime parameter to point to a new service version).
 
 ---
 
-### Dynamic Dependency Resolution
+#### Dynamic Dependency Resolution
 
 Services don’t hardcode references to other services. Instead, they resolve dependencies using nicknames and AWS Parameter Store. This allows one service to refer to another dynamically, making replacements and updates seamless.
 
 ---
 
-### Separation of Concerns
+#### Separation of Concerns
 
 Infrastructure code, configuration, and application logic are maintained in separate repositories:
 
@@ -62,7 +62,7 @@ Each repo is testable and deployable independently.
 
 ---
 
-### Environment-Agnostic Modules
+#### Environment-Agnostic Modules
 
 Terraform modules don’t know what environment they’re in. Each module receives a nickname and retrieves its configuration from a path like:
 
@@ -78,7 +78,7 @@ It writes outputs to:
 
 ---
 
-### External System Referencing
+#### External System Referencing
 
 Even systems not built within this infrastructure model can be referenced predictably. For example:
 
@@ -90,33 +90,27 @@ This enables integration with third-party services or legacy stacks using the sa
 
 ---
 
-### Git as the Gatekeeper
+#### Git as the Gatekeeper
 
 Nothing is deployed unless it’s defined in Git. All changes require review and approval, supporting clear separation of responsibilities, full history, and strong audit trails.
 
 ---
 
-### LocalStack-Compatible by Default
+#### LocalStack-Compatible by Default
 
 Terraform modules support both AWS and LocalStack. This allows local testing and iteration with near-zero cloud cost, while still supporting full production deployments.
 
 ---
 
-### Smart Runtime Caching
+#### Smart Runtime Caching
 
 Systems may cache configuration data locally for performance. If a failure occurs (e.g., database connection error), the system re-checks AWS Parameter Store before failing—enabling dynamic reconfiguration and fast cutover support.
-
----
-
-## Visual Overview
-
-![Core Design Principles Diagram](https://raw.githubusercontent.com/tstrall/aws-deployment-guide/main/diagrams/core-principles.png)
 
 For more technical details, see the [Design Principles reference on GitHub](https://github.com/tstrall/aws-deployment-guide/blob/main/design-principles/README.md).
 
 ---
 
-## Real-World Applications
+### Real-World Applications
 
 These principles are already enabling patterns like:
 
@@ -127,25 +121,23 @@ These principles are already enabling patterns like:
 
 ---
 
-## Explore the Repos
+### Explore the Repos
 
-The architecture is publicly available across these GitHub repositories:
+The architecture is publicly available across these GitHub repositories
 
-- Deployment Guide:  
-  https://github.com/tstrall/aws-deployment-guide
+The **Deployment Guide** explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/aws-deployment-guide)
 
-- Infrastructure as Code (Terraform):  
-  https://github.com/tstrall/aws-iac
+This system is built around three Git repositories:
 
-- Configuration Definitions (JSON):  
-  https://github.com/tstrall/aws-config
+1. **Infrastructure as Code (`aws-iac`)**  👉 [View on GitHub](https://github.com/tstrall/aws-iac)
 
-- Lambda Functions and Runtime Code:  
-  https://github.com/tstrall/aws-lambda
+2. **Configuration (`aws-config`)**  👉 [View on GitHub](https://github.com/tstrall/aws-config)
+
+3. **Lambda Functions (`aws-lambda`)**  👉 [View on GitHub](https://github.com/tstrall/aws-lambda)
 
 ---
 
-## What's Next?
+### What's Next?
 
 Future work will include:
 
