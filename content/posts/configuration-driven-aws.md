@@ -3,6 +3,7 @@ title: "Configuration-Driven AWS Deployments: A Smarter Way to Scale"
 date: 2024-03-15T08:00:00Z
 canonicalURL: "https://differ.blog/inplainenglish/configuration-driven-aws-deployments-a-smarter-way-to-scale-2e9e1f"
 description: "A detailed guide on using config-driven architecture to scale AWS environments without hardcoding or Terraform overload."
+summary: "A detailed guide on using config-driven architecture to scale AWS environments without hardcoding or Terraform overload."
 tags: ["aws", "terraform", "devops", "automation"]
 ---
 
