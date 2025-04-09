@@ -2,7 +2,7 @@
 
 This is the source code and content for [strall.com](https://strall.com) — a personal portfolio and demo hub built using my open-source AWS infrastructure framework.
 
-## 🛠️ Build Your Own Serverless Static Website
+## Build Your Own Serverless Static Website
 
 Want to create your own **serverless, HTTPS-enabled static website** on AWS?
 
@@ -12,7 +12,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
 
 ---
 
-## 🧭 Choose Your Starting Point
+## Choose Your Starting Point
 
 - **Option A: Fork this repo**  
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
@@ -22,25 +22,42 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
 
 ---
 
-## ✅ Get Started
+## Get Started
 
-1. **Fork this repo** (if using Option A)
-2. Follow the [Getting Started Guide](./GETTING_STARTED.md)
-3. Add your own content (Markdown, images, custom pages)
-4. Configure your domain (Route 53 or external)
-5. Deploy using Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac)
-6. Optional: use provided [scripts](./scripts) to install Hugo (Linux, Mac, WSL)
+1. **Fork this repo** (if using Option A)  
+2. Follow the [Getting Started Guide](./GETTING_STARTED.md)  
+3. Add your own content (Markdown, images, custom pages)  
+4. Configure your domain (Route 53 or external)  
+5. Deploy using Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac)  
+6. Optional: use provided [scripts](./scripts) to install Hugo (Linux, Mac, WSL)  
+
+---
+
+## Publish
+
+After deploying your infrastructure, you can publish your Hugo site using the included `publish_site.py` script:
+
+```bash
+AWS_PROFILE=dev-iac ./scripts/publish_site.py --nickname test-site
+```
+
+This will:
+- Build the Hugo site
+- Sync content to the target S3 bucket
+- Invalidate the CloudFront distribution
+
+See [`scripts/publish_site.md`](./scripts/publish_site.md) for more details.
 
 ---
 
 ## What's Included
 
-- Hugo-based static site using PaperMod
-- Markdown-powered articles and documentation
-- Deployment to S3 + CloudFront with HTTPS via ACM
-- DNS hosted with Route 53
-- Real usage & cost transparency
-- Clean structure for others to fork and use
+- Hugo-based static site using PaperMod  
+- Markdown-powered articles and documentation  
+- Deployment to S3 + CloudFront with HTTPS via ACM  
+- DNS hosted with Route 53  
+- Real usage & cost transparency  
+- Clean structure for others to fork and use  
 
 ---
 
@@ -51,7 +68,7 @@ content/            # Articles, homepage, and post content
 layouts/            # Hugo templates
 static/             # Static assets (e.g., CSS, images)
 config.toml         # Hugo site configuration
-scripts/            # Setup scripts for local development
+scripts/            # Setup and publishing tools
 ```
 
 ---
@@ -71,13 +88,13 @@ See [usage](https://strall.com/usage) for real-world examples from this deployme
 
 ## Links
 
-- 🌍 [Live Site](https://strall.com)
-- 📘 [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)
-- ⚙️ [aws-config GitHub Repo](https://github.com/tstrall/aws-config)
-- 📗 [aws-deployment-guide](https://github.com/tstrall/aws-deployment-guide)
-- 🧠 [Latest Article](https://strall.com/posts/config-driven-aws)
-- 💼 [LinkedIn](https://www.linkedin.com/in/ted-strall-1057b44/)
-- 📂 [GitHub Profile](https://github.com/tstrall)
+- [Live Site](https://strall.com)  
+- [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)  
+- [aws-config GitHub Repo](https://github.com/tstrall/aws-config)  
+- [aws-deployment-guide](https://github.com/tstrall/aws-deployment-guide)  
+- [Latest Article](https://strall.com/posts/config-driven-aws)  
+- [LinkedIn](https://www.linkedin.com/in/ted-strall-1057b44/)  
+- [GitHub Profile](https://github.com/tstrall)
 
 ---
 

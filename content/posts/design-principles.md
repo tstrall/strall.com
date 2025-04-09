@@ -68,13 +68,13 @@ Each repo is testable and deployable independently.
 Terraform modules don’t know what environment they’re in. Each module receives a nickname and retrieves its configuration from a path like:
 
 ```
-/aws/<component>/<nickname>/config
+/iac/<component>/<nickname>/config
 ```
 
 It writes outputs to:
 
 ```
-/aws/<component>/<nickname>/runtime
+/iac/<component>/<nickname>/runtime
 ```
 
 ---

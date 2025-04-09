@@ -17,7 +17,7 @@ This site is both a personal portfolio and a working demo of the tools I’ve bu
 
 My goals with this project:
 
-- Share a clean, low-cost template for building your own static site on AWS
+- Share a clean, low-cost template for building your own infrastructure on AWS
 - Demonstrate how config-driven deployments reduce friction and increase auditability
 - Provide clear, open documentation of patterns that scale
 

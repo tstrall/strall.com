@@ -2,6 +2,8 @@
 title = "AWS Certification Notes"
 +++
 
+👉 [View the AWS Knowledge Base on GitHub](https://github.com/tstrall/aws-knowledge-base)
+
 <p style="display: flex; align-items: center; gap: 0.5em;">
   <img
     class="theme-switch-logo"
@@ -11,11 +13,9 @@ title = "AWS Certification Notes"
     style="width: 64px; height: 64px;"
     alt="Strall logo">
   <span>
-    I’ve built a dedicated open-source knowledge base to capture everything I’m learning working toward several AWS certifications, including:
+    I’ve built a dedicated open-source knowledge base to capture everything I’m learning while working toward AWS certifications, including:
   </span>
 </p>
-
-👉 [View the AWS Knowledge Base on GitHub](https://github.com/tstrall/aws-knowledge-base)
 
 - Service-by-service notes
 - Study checklists

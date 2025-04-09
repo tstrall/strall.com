@@ -105,7 +105,7 @@ Want to implement this model? Here’s what to do next:
 
 1. Fork the [`aws-iac`](https://github.com/tstrall/aws-iac), [`aws-config`](https://github.com/tstrall/aws-config) and [`aws-lambda`](https://github.com/tstrall/aws-lambda) repositories  
 2. Set up a CI/CD pipeline to sync the config repo with AWS Parameter Store  
-3. Define IAM policies to restrict changes to `/aws/.../config` entries  
+3. Define IAM policies to restrict changes to `/iac/.../config` entries  
 4. Deploy and test your first configuration-driven AWS environment!
 
 ---

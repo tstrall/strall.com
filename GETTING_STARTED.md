@@ -4,13 +4,13 @@ This guide walks you through creating your own serverless static website by fork
 
 ---
 
-## 🧭 Choose Your Starting Point
+## Choose Your Starting Point
 
 - **Option A: Fork this repo**  
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
 
 - **Option B: Start fresh**  
-Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
+  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
 ---
 
@@ -26,13 +26,13 @@ Create your own repo, run `hugo new site .`, and follow the [Serverless Static W
    cd YOUR_REPO
    ```
 
-> 🔁 Replace `YOUR_USERNAME` and `YOUR_REPO` with your GitHub username and the name of your fork.
+> Replace `YOUR_USERNAME` and `YOUR_REPO` with your GitHub username and the name of your fork.
 
 ---
 
 ## Step 2: Install Required Tools
 
-Use the provided helper scripts on 🍎 Mac, 🐧 Linux, or 🪟 Windows WSL:
+Use the provided helper scripts on Mac, Linux, or Windows WSL:
 
 ```bash
 ./scripts/install_go_and_hugo.sh
@@ -71,3 +71,26 @@ Visit [http://localhost:1313](http://localhost:1313) to see your site.
 Use the Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac) and configuration from [`aws-config`](https://github.com/tstrall/aws-config) to deploy to S3 + CloudFront with HTTPS and DNS support.
 
 Refer to the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) for detailed setup instructions.
+
+---
+
+## Step 6: Publish Your Site
+
+Once your infrastructure is deployed, use the `publish_site.py` script to upload your site content and refresh the CloudFront cache.
+
+```bash
+AWS_PROFILE=dev-iac ./scripts/publish_site.py --nickname test-site
+```
+
+To preview the S3 sync without making changes:
+
+```bash
+AWS_PROFILE=dev-iac ./scripts/publish_site.py --nickname test-site --dry-run
+```
+
+This script:
+- Builds the Hugo site
+- Uploads it to the correct S3 bucket based on the runtime config
+- Invalidates CloudFront to reflect content changes
+
+For full usage details and runtime config requirements, see [scripts/publish_site.md](./scripts/publish_site.md).
