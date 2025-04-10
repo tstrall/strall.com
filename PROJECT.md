@@ -26,8 +26,8 @@ This file tracks the actual steps needed to bring `strall.com` online as a worki
 - [x] Define Terraform config in `aws-iac` for:
   - [x] S3 bucket (static site hosting)
   - [x] CloudFront distribution (HTTPS)
-  - [ ] ACM certificate (in us-east-1)
-  - [ ] Route 53 DNS record
+  - [x] ACM certificate (in us-east-1)
+  - [x] Route 53 DNS record
 - [x] Deploy infrastructure to AWS
 - [x] Test HTTPS + domain routing (e.g., `https://strall.com`)
 
@@ -38,15 +38,15 @@ This file tracks the actual steps needed to bring `strall.com` online as a worki
 - [x] Run `hugo` to generate `public/` folder
 - [x] Upload contents of `public/` to S3 bucket
 - [x] Invalidate CloudFront cache (if needed)
-- [ ] Confirm site is live and looks correct
+- [x] Confirm site is live and looks correct
 
 ---
 
 ## Final Polish
 
-- [ ] Create `usage.md` showing real AWS costs
-- [x] Add `/about` or `/_index.md` homepage content
 - [x] Add link to live site in `README.md`
+- [x] Add `/about` or `/_index.md` homepage content
+- [ ] Create `usage.md` showing real AWS costs
 - [ ] Enable S3 versioning or lifecycle policy (optional)
 
 ---
