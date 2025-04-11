@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import os
 import subprocess
 import sys
 
@@ -57,6 +58,7 @@ def main():
     bucket = runtime.get("content_bucket_prefix")
     dist_id = runtime.get("cloudfront_distribution_id")
     domain = runtime.get("cloudfront_distribution_domain")
+    custom_domain = runtime.get("custom_domain")
 
     if not bucket or not dist_id:
         print("❌ Missing required fields in runtime config.")
@@ -78,7 +80,12 @@ def main():
     if domain:
         print(f"🌐 Site is live at: https://{domain}")
     else:
-        print("ℹ️ CloudFront domain not found in runtime.")
+        print("ℹ️ No CloudFront domain or custom URL found in runtime.")
+
+    if custom_domain:
+        print(f"🌐 Site is live at: https://{custom_domain}")
+
+    print("\n✅ Hugo site published successfully.")
 
 
 if __name__ == "__main__":
