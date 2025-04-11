@@ -1,8 +1,8 @@
 ---
-title: "Configuration-Driven AWS Architecture: Core Design Principles"
+title: "Adage: Configuration-Driven AWS Architecture - Core Design Principles"
 description: "A practical framework for building scalable, modular, and auditable AWS infrastructure using Git, Terraform, and Parameter Store."
 summary: "A practical framework for building scalable, modular, and auditable AWS infrastructure using Git, Terraform, and Parameter Store."
-date: 2025-04-02
+date: 2025-04-11
 categories: ["Architecture", "AWS", "Infrastructure as Code"]
 tags: ["aws", "terraform", "design principles", "parameter store", "infrastructure", "automation"]
 ---
