@@ -107,7 +107,7 @@ Terraform modules support both AWS and LocalStack. This allows local testing and
 
 Systems may cache configuration data locally for performance. If a failure occurs (e.g., database connection error), the system re-checks AWS Parameter Store before failing—enabling dynamic reconfiguration and fast cutover support.
 
-For more technical details, see the [Design Principles reference on GitHub](https://github.com/tstrall/aws-deployment-guide/blob/main/design-principles/README.md).
+For more technical details, see the [**Adage** Design Principles reference on GitHub](https://github.com/tstrall/adage/blob/main/design-principles/README.md).
 
 ---
 
@@ -126,7 +126,7 @@ These principles are already enabling patterns like:
 
 The architecture is publicly available across these GitHub repositories
 
-The **Deployment Guide** explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/aws-deployment-guide)
+The **Adage** guide explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/adage)
 
 This system is built around three Git repositories:
 

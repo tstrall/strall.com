@@ -1,7 +1,6 @@
 ---
-title: "Configuration-Driven AWS Deployments: A Smarter Way to Scale"
-date: 2024-03-15T08:00:00Z
-canonicalURL: "https://differ.blog/inplainenglish/configuration-driven-aws-deployments-a-smarter-way-to-scale-2e9e1f"
+title: "Adage: A Configuration-Driven AWS Deployment Framework"
+date: 2024-04-10T08:00:00Z
 description: "A detailed guide on using config-driven architecture to scale AWS environments without hardcoding or Terraform overload."
 summary: "A detailed guide on using config-driven architecture to scale AWS environments without hardcoding or Terraform overload."
 tags: ["aws", "terraform", "devops", "automation"]
@@ -9,7 +8,7 @@ tags: ["aws", "terraform", "devops", "automation"]
 
 ---
 
-### Why Traditional AWS Deployments Are Holding You Back
+### Traditional AWS Deployments Are Holding You Back
 
 If you've worked with AWS long enough, you’ve likely experienced these pain points:
 
@@ -71,7 +70,7 @@ Instead of modifying Terraform every time something needs to be deployed, we sep
 
 ### How It Works: Three Repositories Working Together
 
-The **Deployment Guide** explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/aws-deployment-guide)
+The **Adage** guide explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/adage)
 
 This system is built around three Git repositories:
 

@@ -1,6 +1,6 @@
 # strall.com
 
-This is the source code and content for [strall.com](https://strall.com) — a personal portfolio and demo hub built using my open-source AWS infrastructure framework.
+This is the source code and content for [strall.com](https://strall.com) — a personal portfolio and demo hub built using my [open-source AWS automation framework](https://github.com/tstrall/adage)  **Adage**.
 
 ## Build Your Own Serverless Static Website
 
@@ -18,7 +18,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
 
 - **Option B: Start fresh**  
-  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/aws-deployment-guide/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
+  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
 ---
 
@@ -89,9 +89,9 @@ See [usage](https://strall.com/usage) for real-world examples from this deployme
 ## Links
 
 - [Live Site](https://strall.com)  
+- [**Adage**](https://github.com/tstrall/adage)  
 - [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)  
 - [aws-config GitHub Repo](https://github.com/tstrall/aws-config)  
-- [aws-deployment-guide](https://github.com/tstrall/aws-deployment-guide)  
 - [Latest Article](https://strall.com/posts/config-driven-aws)  
 - [LinkedIn](https://www.linkedin.com/in/ted-strall-1057b44/)  
 - [GitHub Profile](https://github.com/tstrall)
@@ -108,4 +108,4 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 
 Built and maintained by [tstrall](https://strall.com).
 
-This site is part of a larger open-source effort to define reusable AWS infrastructure and configuration strategies. Fork it, explore it, or use it as your own starting point.
+This site is part of **Adage** a larger open-source effort to define reusable AWS infrastructure and configuration strategies. Fork it, explore it, or use it as your own starting point.

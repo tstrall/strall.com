@@ -16,7 +16,7 @@ title = "strall.com"
   </span>
 </p>
 
-This site serves as a working demo of my [open-source AWS automation framework](https://github.com/tstrall/aws-deployment-guide) — built for flexibility, reuse, and minimal friction. It’s the same configuration-driven infrastructure I use to manage cloud projects and publish content with zero overhead.
+This site serves as a working demo of  **Adage** - my [open-source AWS automation framework](https://github.com/tstrall/adage) — built for flexibility, reuse, and minimal friction. It’s the same configuration-driven infrastructure I use to manage cloud projects and publish content with zero overhead.
 
 **Looking for HTTPS, CDN, and static hosting — all on the [AWS Free Tier](https://aws.amazon.com/free/)?**
 

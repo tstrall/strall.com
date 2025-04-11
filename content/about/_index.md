@@ -26,7 +26,7 @@ My goals with this project:
 ### Projects Featured on This Site
 
 - [strall.com](https://strall.com) – Hugo + S3 + CloudFront, fully serverless
-- [aws-deployment-guide](https://github.com/tstrall/aws-deployment-guide) – Docs and patterns for dynamic, automated deployments
+- [**Adage**](https://github.com/tstrall/adage) – Docs and usage patterns for dynamic, automated deployments
 - [aws-iac](https://github.com/tstrall/aws-iac) – Reusable Terraform infrastructure modules
 - [aws-config](https://github.com/tstrall/aws-config) – JSON-based environment configuration
 - [aws-lambda](https://github.com/tstrall/aws-lambda) – Parameter-driven Lambda microservices
