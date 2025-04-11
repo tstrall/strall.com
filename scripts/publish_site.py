@@ -19,7 +19,7 @@ def run(cmd, dry_run=False):
     return result
 
 
-def get_runtime(nickname):
+def get_runtime(component, nickname):
     """Fetch runtime parameter from AWS SSM."""
     session = boto3.Session()
     region = session.region_name
@@ -28,7 +28,7 @@ def get_runtime(nickname):
         sys.exit(1)
 
     ssm = session.client("ssm", region_name=region)
-    name = f"/iac/serverless-site/{nickname}/runtime"
+    name = f"/iac/{component}/{nickname}/runtime"
 
     try:
         response = ssm.get_parameter(Name=name)
@@ -40,8 +40,11 @@ def get_runtime(nickname):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Publish Hugo site to a deployed S3 + CloudFront target.")
-    parser.add_argument("--nickname", required=True, help="Nickname for the site (e.g. test-site)")
+    parser = argparse.ArgumentParser(
+        description="Publish Hugo site to a deployed S3 + CloudFront target."
+    )
+    parser.add_argument("nickname", help="Nickname for the site (e.g. test-site)")
+    parser.add_argument("--component", default="serverless-site", help="Terraform component name (default: serverless-site)")
     parser.add_argument("--dry-run", action="store_true", help="Preview changes without uploading")
     args = parser.parse_args()
 
@@ -49,7 +52,7 @@ def main():
     run(["hugo"], dry_run=args.dry_run)
 
     print("📡 Fetching runtime config from Parameter Store...")
-    runtime = get_runtime(args.nickname)
+    runtime = get_runtime(args.component, args.nickname)
 
     bucket = runtime.get("content_bucket_prefix")
     dist_id = runtime.get("cloudfront_distribution_id")
