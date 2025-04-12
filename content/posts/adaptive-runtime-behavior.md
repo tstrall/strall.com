@@ -1,6 +1,6 @@
 +++
 title = "Adaptive Runtime Behavior: Machine Learning Meets Infrastructure"
-date = "2025-04-12"
+date = "2025-04-11"
 description = "This framework wasn't built for ML — but it creates the conditions for it. Here's how configuration-driven infrastructure supports adaptive systems."
 tags = ["aws", "terraform", "devops", "automation"]
 +++
@@ -99,5 +99,5 @@ This infrastructure model supports adaptation by design. It separates configurat
 
 > Systems that externalize configuration and expose runtime state are easier to reason about — and easier to evolve.
 
-For more context, see the [Adage Design Principles →](../design-principles/README.md)
+For more context, see the [Adage Design Principles →](../design-principles/)
 

@@ -6,8 +6,6 @@ categories: ["Architecture", "AWS", "Infrastructure as Code"]
 tags: ["aws", "terraform", "design principles", "parameter store", "infrastructure", "automation"]
 ---
 
----
-
 This article outlines the core design principles behind a configuration-driven approach to AWS infrastructure.
 
 These principles are designed to support modularity, auditability, scalability, and low-friction deployment across environments. Together, they form a consistent model that separates infrastructure code, configuration, and runtime behavior—while keeping everything connected through predictable patterns.

@@ -5,8 +5,6 @@ description: "A detailed guide on using config-driven architecture to scale AWS 
 tags: ["aws", "terraform", "devops", "automation"]
 ---
 
----
-
 ### Traditional AWS Deployments Are Holding You Back
 
 If you've worked with AWS long enough, you’ve likely experienced these pain points:
