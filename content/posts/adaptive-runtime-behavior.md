@@ -1,11 +1,9 @@
----
-title: Adaptive Runtime Behavior: Machine Learning Meets Infrastructure
-date: 2025-04-12
-description: This framework wasn't built for ML — but it creates the conditions for it. Here's how configuration-driven infrastructure supports adaptive systems.
-tags: ["aws", "terraform", "devops", "automation"]
----
-
----
++++
+title = "Adaptive Runtime Behavior: Machine Learning Meets Infrastructure"
+date = "2025-04-12"
+description = "This framework wasn't built for ML — but it creates the conditions for it. Here's how configuration-driven infrastructure supports adaptive systems."
+tags = ["aws", "terraform", "devops", "automation"]
++++
 
 Open source [**Adage: Configuration-Driven AWS Deployment Framework**](https://github.com/tstrall/adage) wasn’t built as a machine learning platform — but it enables one. Because each deployed component exposes its **runtime state**, **dependencies**, and **configuration** via AWS Parameter Store, the system becomes:
 
