@@ -18,8 +18,6 @@ title = "strall.com"
 
 This site serves as a working demo of [**Adage:** A Configuration-Driven AWS Deployment Framework](https://github.com/tstrall/adage) — built for flexibility, reuse, and minimal friction. It’s the same configuration-driven infrastructure I use to manage cloud projects and publish content with zero overhead.
 
-[**Looking for HTTPS, CDN, and static hosting and email forwarding**](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) — all on the **[AWS Free Tier](https://aws.amazon.com/free/)?**
-
-If you already have a domain name, this project gives you everything you need to launch a fast, secure, serverless website — with minimal AWS cost and no monthly hosting fees, and email forwarding via [ImprovMX](https://improvmx.com/).
+[**Looking for HTTPS, CDN, and static hosting and email forwarding**](/posts/serverless-site/) — all on the **[AWS Free Tier](https://aws.amazon.com/free/)?**
 
 {{< logo-switch-script >}}

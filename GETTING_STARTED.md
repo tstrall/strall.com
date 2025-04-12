@@ -6,11 +6,15 @@ This guide walks you through creating your own serverless static website by fork
 
 ## Choose Your Starting Point
 
-- **Option A: Fork this repo**  
-  Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
+- **Option A: Start fresh**  
+  - Create your own Github repo
+  - Install go and hugo
+  - Run `hugo new site .`
+  - Copy [`scripts/publish_site.py`](./scripts/publish_site.py) from this repo into your new repo
+  - Follow the [Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
-- **Option B: Start fresh**  
-  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
+- **Option B: Fork this repo**  
+  Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
 
 ---
 

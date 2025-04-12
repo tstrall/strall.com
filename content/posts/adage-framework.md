@@ -1,8 +1,7 @@
 ---
 title: "Adage: A Configuration-Driven AWS Deployment Framework"
-date: 2024-04-10T08:00:00Z
+date: 2024-04-09
 description: "A detailed guide on using config-driven architecture to scale AWS environments without hardcoding or Terraform overload."
-summary: "A detailed guide on using config-driven architecture to scale AWS environments without hardcoding or Terraform overload."
 tags: ["aws", "terraform", "devops", "automation"]
 ---
 
