@@ -64,7 +64,7 @@ From the `aws-iac` repo, deploy the infrastructure:
 
 ```sh
 cd aws-iac/
-AWS_PROFILE=dev-iac ./deploy.sh serverless-site mydemo
+AWS_PROFILE=dev-iac ./scripts/deploy.sh serverless-site mydemo
 ```
 
 Terraform reads the config from Parameter Store and provisions everything: S3, CloudFront, DNS, and ACM.
@@ -77,7 +77,7 @@ Once deployed, publish your static content:
 
 ```sh
 cd strall.com/
-AWS_PROFILE=dev-iac ./scripts/publish_site.py --nickname mydemo
+AWS_PROFILE=dev-iac ./scripts/deploy.sh serverless-site mydemo
 ```
 
 The script builds your Hugo site, syncs it to S3, and triggers a CloudFront invalidation. If a custom domain was configured, it will print the live URL.
