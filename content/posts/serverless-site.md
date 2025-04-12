@@ -1,7 +1,7 @@
 ---
 title: "Build a Serverless Static Site on AWS in Minutes — with Adage"
 date: 2025-04-11
-description: "Use the Adage framework to deploy a fully serverless static website on AWS using config-driven infrastructure and Git-based workflows."
+description: "Use the Adage open source framework to deploy a fully serverless static website on AWS using config-driven infrastructure and Git-based workflows."
 tags: ["aws", "serverless", "terraform", "s3", "cloudfront", "adage"]
 categories: ["quickstart", "deployment"]
 draft: false
