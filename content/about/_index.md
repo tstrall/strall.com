@@ -45,7 +45,7 @@ My goals with this project:
 
 ### Resume
 
-You can [view it online](/resume/).
+{{< resume-downloads >}}
 
 ### Find Me Elsewhere
 

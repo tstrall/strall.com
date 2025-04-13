@@ -134,5 +134,3 @@ Education
 -   DePaul University, MS, Predictive Analytics (have not completed all
     coursework)
 -   University of Illinois at Chicago, BS, Software Engineering
-
-{{< resume-downloads >}}

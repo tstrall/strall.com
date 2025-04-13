@@ -105,5 +105,3 @@ Innovative and pragmatic engineer with 15+ years of experience designing and imp
 ### Education
 - **DePaul University**, MS, Predictive Analytics (*have not completed all coursework*)
 - **University of Illinois at Chicago**, BS, Software Engineering
-
-{{< resume-downloads >}}
