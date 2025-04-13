@@ -23,9 +23,18 @@ My goals with this project:
 
 ---
 
+### What I’m Building
+
+- **Reusable AWS infrastructure components** using Terraform and Parameter Store
+- **Modular deployment patterns** for multi-account environments with dynamic runtime configuration
+- **Serverless tooling and workflows** that promote automation, visibility, and safety
+- **Open documentation** to help others replicate these ideas with clarity and control
+
+---
+
 ### Projects Featured on This Site
 
-- [**Adage**: A Configuration-Driven AWS Deployment Framework](https://github.com/tstrall/adage)
+- [**Adage: A Configuration-Driven AWS Deployment Framework**](https://github.com/tstrall/adage)
 - [aws-iac](https://github.com/tstrall/aws-iac) – Reusable Terraform infrastructure modules
 - [aws-config](https://github.com/tstrall/aws-config) – JSON-based environment configuration
 - [aws-lambda](https://github.com/tstrall/aws-lambda) – Parameter-driven Lambda microservices
@@ -36,11 +45,7 @@ My goals with this project:
 
 ### Resume
 
-You can [view](/resume/) or download:
-
-- [PDF version](/downloads/Ted-Strall-Resume.pdf)
-- [Plain text](/downloads/Ted-Strall-Resume.txt)
-- [Word document](/downloads/Ted-Strall-Resume.docx)
+You can [view it online](/resume/).
 
 ### Find Me Elsewhere
 
