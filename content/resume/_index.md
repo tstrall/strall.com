@@ -31,7 +31,7 @@ Innovative and pragmatic engineer with 15+ years of experience designing and imp
 #### Senior Data Engineer – CMS Advanced Provider Screening Project  
 **TISTA Science and Technology Corporation**  
 *Jan 2023 – Sep 2024*  
-- Successfully automated a complex, large-scale data migration for CMS that was 2 years in the making
+- Automated a complex, large-scale data migration of a 25 TB Oracle database for CMS
 - Integrated automation and reporting developed into the standard release workflow
 - Maintained the CMS Advanced Provider Screening data model using Erwin and custom scripting
 
