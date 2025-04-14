@@ -19,12 +19,15 @@ pandoc "$INPUT" -o "$OUTPUT_DIR/${BASENAME}.docx"
 echo "✅ DOCX generated"
 
 # TXT
-pandoc "$INPUT" -t plain -o "$OUTPUT_DIR/${BASENAME}.txt"
+pandoc "$INPUT" -t plain --wrap=none -o "$OUTPUT_DIR/${BASENAME}.txt"
 echo "✅ TXT generated"
 
 # PDF (optional)
 if command -v xelatex &>/dev/null; then
-  pandoc "$INPUT" --pdf-engine=xelatex -o "$OUTPUT_DIR/${BASENAME}.pdf"
+  pandoc "$INPUT" \
+    --pdf-engine=xelatex \
+    --template="$(dirname "$0")/resume-template.tex" \
+    -o "$OUTPUT_DIR/${BASENAME}.pdf"
   echo "✅ PDF generated using xelatex"
 else
   echo "⚠️  PDF skipped: xelatex not found. Install TeX engine for PDF support."

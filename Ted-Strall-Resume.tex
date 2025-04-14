@@ -1,0 +1,249 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Font settings
+\setmainfont{DejaVu Sans}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+% Line spacing
+\linespread{1.15}
+
+% No paragraph indent, add spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Section styling
+\titleformat{\section}{\large\bfseries\color{black}}{}{0pt}{}
+\titleformat{\subsection}[runin]{\bfseries}{}{0pt}{}[\newline]
+
+% List styling
+\setlist[itemize]{noitemsep, topsep=2pt, left=1.5em}
+
+% Metadata formatting
+\makeatletter
+\def\@maketitle{
+  \begin{center}
+    {\LARGE \bfseries \@title}\\[6pt]
+    {\@author}\\[4pt]
+    {\@date}
+  \end{center}
+  \vspace{1em}
+}
+\makeatother
+
+% Prevent numbered subsubsections
+\setcounter{secnumdepth}{0}
+\renewcommand{\thesubsubsection}{}
+
+\begin{document}
+
+\title{Ted Strall}
+\author{Cloud \& Data Infrastructure Engineer \\
+\href{mailto:ted@strall.com}{ted@strall.com} \\
+(847)~913-7886 \\
+\href{https://strall.com}{strall.com} ~|~
+\href{https://github.com/tstrall}{github.com/tstrall} ~|~
+\href{https://linkedin.com/in/ted-strall-1057b44}{LinkedIn}}
+\date{}
+
+\maketitle
+
+\textbf{Ted Strall}\\
+Cloud \& Data Infrastructure Engineer\\
+Lake Zurich, IL\\
+\href{https://www.linkedin.com/in/ted-strall-1057b44}{linkedin.com/in/ted-strall-1057b44}
+\textbar{} \href{https://strall.com}{strall.com} \textbar{}
+\href{https://github.com/tstrall}{github.com/tstrall}\\
+Email: {[}ted@strall.com{]} \textbar{} Phone: {[}847-913-7886{]}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{summary}{%
+\subsubsection{Summary}\label{summary}}
+
+Innovative and pragmatic engineer with 15+ years of experience designing
+and implementing scalable data platforms, infrastructure-as-code
+frameworks, and cloud-native applications. Proven ability to deliver
+robust infrastructure and automation in both high-compliance government
+environments and corporate contexts. Creator of \textbf{Adage}, an
+open-source AWS deployment framework focused on modularity, dynamic
+configuration, and environment-aware automation.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{core-skills}{%
+\subsubsection{Core Skills}\label{core-skills}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Cloud Platforms:} AWS (EC2, S3, Lambda, CloudFront, Route 53,
+  RDS, SES, Cognito, IAM, EMR)
+\item
+  \textbf{Infrastructure \& DevOps:} Terraform, Terragrunt,
+  CloudFormation, Jenkins, GitHub Actions
+\item
+  \textbf{Languages:} Python, Java, SQL, Shell scripting
+\item
+  \textbf{Big Data \& Analytics:} Spark, Hadoop, Hive, Kafka,
+  Prometheus, InfluxDB, ElasticSearch, SOLR
+\item
+  \textbf{Other Tools:} Oracle, PostgreSQL, Antlr4, Linux
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{experience}{%
+\subsubsection{Experience}\label{experience}}
+
+\hypertarget{senior-data-engineer-cms-advanced-provider-screening-project}{%
+\paragraph{Senior Data Engineer -- CMS Advanced Provider Screening
+Project}\label{senior-data-engineer-cms-advanced-provider-screening-project}}
+
+\textbf{Sparksoft Corporation}\\
+\emph{Oct 2024 -- Mar 2025}\\
+- Successfully automated a 25 TB database migration from AWS RDS Oracle
+to Aurora Postgresql using AWS SCT and DMS - Migrated maintenance of the
+CMS Advanced Provider Screening data model to a team of business
+analysts and engineers
+
+\hypertarget{senior-data-engineer-cms-advanced-provider-screening-project-1}{%
+\paragraph{Senior Data Engineer -- CMS Advanced Provider Screening
+Project}\label{senior-data-engineer-cms-advanced-provider-screening-project-1}}
+
+\textbf{TISTA Science and Technology Corporation}\\
+\emph{Jan 2023 -- Sep 2024}\\
+- Automated a complex, large-scale data migration of a 25 TB Oracle
+database for CMS - Integrated automation and reporting developed into
+the standard release workflow - Maintained the CMS Advanced Provider
+Screening data model using Erwin and custom scripting
+
+\hypertarget{senior-software-engineer-office-of-the-cto-rapid-prototyping-proposal-support}{%
+\paragraph{Senior Software Engineer -- Office of the CTO -- Rapid
+Prototyping \& Proposal
+Support}\label{senior-software-engineer-office-of-the-cto-rapid-prototyping-proposal-support}}
+
+\textbf{TISTA Science and Technology Corporation}\\
+\emph{Oct 2020 -- Dec 2022}\\
+- Designed and implemented a self-service AWS infrastructure catalog
+using Terraform and Terragrunt - Enabled modular, developer-friendly
+environments for websites, APIs, and microservices - Reusable subsystems
+included DNS, HTTPS, Cognito, and shared security schemes - Originated
+core concepts for the \textbf{Adage} open-source framework
+
+\hypertarget{senior-software-engineer-cms-lifeline-project}{%
+\paragraph{Senior Software Engineer -- CMS Lifeline
+Project}\label{senior-software-engineer-cms-lifeline-project}}
+
+\textbf{TISTA Science and Technology Corporation}\\
+\emph{Apr 2019 -- Sep 2020}\\
+- Built infrastructure and logic for CMS/FCC Lifeline Automated
+Verification System - Automated all environments with CloudFormation and
+Jenkins pipelines - Integrated backend Spark analytics and participated
+in CMS Technical Review Board preparation
+
+\hypertarget{site-reliability-engineer}{%
+\paragraph{Site Reliability Engineer}\label{site-reliability-engineer}}
+
+\textbf{Bank of America}\\
+\emph{Apr 2018 -- Mar 2019}\\
+- Built long-term HDFS storage backend for Prometheus time series data -
+Enabled Grafana to query historical data via custom PromQL-compatible
+service - Designed architecture to feed ML-derived metrics into
+real-time Prometheus alerts
+
+\hypertarget{senior-software-engineer}{%
+\paragraph{Senior Software Engineer}\label{senior-software-engineer}}
+
+\textbf{Uptake}\\
+\emph{May 2017 -- Mar 2018}\\
+- Developed and maintained microservices and ingest pipelines for
+external customer data - Supported data science teams through backend
+infrastructure development
+
+\hypertarget{senior-software-engineer-1}{%
+\paragraph{Senior Software Engineer}\label{senior-software-engineer-1}}
+
+\textbf{Finch Computing}\\
+\emph{Jan 2014 -- May 2017}\\
+- Developed machine learning and data processing pipelines for
+large-scale/streaming data - Migrated legal search backend from
+HPAutonomy to SOLR
+
+\hypertarget{data-engineer}{%
+\paragraph{Data Engineer}\label{data-engineer}}
+
+\textbf{Nokia Location and Commerce}\\
+\emph{Mar 2013 -- Jun 2014}\\
+- Built analytics pipelines for global vehicle traffic data - Migrated
+from in-house Hadoop to AWS EMR - Re-implemented k-means clustering with
+Mahout for improved performance and maintainability
+
+\hypertarget{previous-roles}{%
+\paragraph{Previous Roles}\label{previous-roles}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Senior Engineer} -- Orbitz Worldwide (2010--2013)
+\item
+  \textbf{Lead Java Developer} -- Sears Holdings Corporation
+  (2009--2010)
+\item
+  \textbf{Senior Application Developer} -- Harpo Productions
+  (2007--2009)
+\item
+  \textbf{Lead Software Engineer} -- United Airlines (2002--2007)
+\item
+  \textbf{Senior Software Engineer} -- MyPoints.com (1999--2002)
+\item
+  \textbf{Software Engineer} -- Motorola (1996--1998)
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{projects}{%
+\subsubsection{Projects}\label{projects}}
+
+\textbf{Adage -- Config-Driven AWS Deployment Framework}\\
+\href{https://github.com/tstrall/adage}{github.com/tstrall/adage}\\
+- Modular, parameterized IaC framework for multi-account AWS setups -
+Supports runtime promotion, service discovery, environment-aware
+deployment
+
+\textbf{Strall.com -- Live Demo for Adage}\\
+\href{https://strall.com}{strall.com}\\
+- Serverless static site deployed via Adage, using S3, CloudFront, Route
+53, and SES - Demonstrates real-time config resolution, public DNS,
+HTTPS, and automated publishing
+
+\textbf{AWS Knowledge Base}\\
+\href{https://github.com/tstrall/aws-knowledge-base}{github.com/tstrall/aws-knowledge-base}\\
+- Markdown-based learning system with detailed notes and certification
+checklists - Covers AWS SAA, SAP, Developer Associate, and ML exams
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{education}{%
+\subsubsection{Education}\label{education}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{DePaul University}, MS, Predictive Analytics (\emph{have not
+  completed all coursework})
+\item
+  \textbf{University of Illinois at Chicago}, BS, Software Engineering
+\end{itemize}
+
+\end{document}
