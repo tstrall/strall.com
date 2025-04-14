@@ -25,12 +25,15 @@ Innovative and pragmatic engineer with 15+ years of experience designing and imp
 #### Senior Data Engineer – CMS Advanced Provider Screening Project  
 **Sparksoft Corporation**  
 *Oct 2024 – Mar 2025*  
-- ...
+- Successfully automated a 25 TB database migration from AWS RDS Oracle to Aurora Postgresql Using AWS SCT and DMS
+- Migrated maintenance of the CMS Advanced Provider Screening data model to a team of business analysts and engineers
 
 #### Senior Data Engineer – CMS Advanced Provider Screening Project  
 **TISTA Science and Technology Corporation**  
 *Jan 2023 – Sep 2024*  
-- ...
+- Successfully automated a complex, large-scale data migration for CMS that was 2 years in the making
+- Integrated automation and reporting developed into the standard release workflow
+- Maintained the CMS Advanced Provider Screening data model using Erwin and custom scripting
 
 #### Senior Software Engineer – Office of the CTO – Rapid Prototyping & Proposal Support
 **TISTA Science and Technology Corporation**  
