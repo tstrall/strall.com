@@ -12,6 +12,8 @@ Email: ted@strall.com | Phone: 847-913-7886
 
 Cloud & Software Infrastructure Engineer with over 15 years of experience designing and deploying high-performance, production-grade systems across AWS and hybrid environments. Proven expertise in scalable microservices, real-time data pipelines, and infrastructure-as-code. Creator of Adage, an open-source AWS deployment framework. Adept at leading complex migrations, mentoring developers, and driving cloud-native architectures using Python, Java, Kafka, Kubernetes, and CI/CD best practices. 
 
+LinkedIn: [https://www.linkedin.com/in/ted-strall-1057b44](https://www.linkedin.com/in/ted-strall-1057b44) · Website: [https://strall.com](https://strall.com)
+
 # **Core Skills**
 
 **Cloud & Infra:** AWS services (EC2, Lambda, CloudFront, RDS, Cognito, IAM, SageMaker, Comprehend AI), Kubernetes, Docker  
@@ -29,7 +31,7 @@ Cloud & Software Infrastructure Engineer with over 15 years of experience design
 
 Sparksoft Corporation
 
-Oct 2024 – Mar 2025
+Oct 2024 \- Mar 2025
 
 * CMS Advanced Provider Screening Project (same client as TISTA role)  
 * Led automation of 25 TB Oracle-to-Aurora migration using AWS SCT, DMS, and Python-based orchestration  
@@ -39,7 +41,7 @@ Oct 2024 – Mar 2025
 
 TISTA Science and Technology Corporation
 
-Jan 2023 – Sep 2024
+Jan 2023 \- Sep 2024
 
 * CMS Advanced Provider Screening Project (continued under Sparksoft later)  
 * Automated a complex, large-scale data migration of a 25 TB Oracle database  
@@ -50,7 +52,7 @@ Jan 2023 – Sep 2024
 
 TISTA Science and Technology Corporation
 
-Oct 2020 – Dec 2022
+Oct 2020 \- Dec 2022
 
 * Worked in the Office of the CTO supporting rapid prototyping and proposal development  
 * Designed scalable AWS infrastructure catalog to streamline multi-environment deployments  
@@ -61,7 +63,7 @@ Oct 2020 – Dec 2022
 
 TISTA Science and Technology Corporation
 
-Apr 2019 – Sep 2020
+Apr 2019 \- Sep 2020
 
 * Led backend infrastructure development for the CMS Lifeline Project  
 * Automated infrastructure and pipelines using CloudFormation, Jenkins, and Spark analytics  
@@ -71,7 +73,7 @@ Apr 2019 – Sep 2020
 
 Bank of America
 
-Apr 2018 – Mar 2019
+Apr 2018 \- Mar 2019
 
 * Built long-term Prometheus \+ HDFS time-series backend with Kafka ingestion and custom alerting  
 * Designed metrics processing pipeline to support ML-generated predictions and real-time dashboards
@@ -80,17 +82,17 @@ Apr 2018 – Mar 2019
 
 Uptake
 
-May 2017 – Mar 2018
+May 2017 \- Mar 2018
 
 * Maintained ingest pipelines and API infrastructure supporting predictive analytics  
 * Assisted in DevOps transition to containerized microservices and CI/CD tooling
 
 ## **Additional Roles**
 
-* Senior Software Engineer – Finch Computing (Jan 2014 – May 2017\)  
-* Data Engineer – Nokia Location and Commerce (Mar 2013 – Jun 2014\)  
-* Senior Engineer – Orbitz Worldwide (Jan 2010 – Dec 2013\)  
-* Lead Developer – Sears (Jan 2009 – Dec 2009), Harpo (Jan 2007 – Dec 2008),  United Airlines (Jan 2002 – Dec 2006), MyPoints (Jan 1999 – Dec 2001), Motorola (Jan 1996 – Dec 1998\)
+* Senior Software Engineer \- Finch Computing (Jan 2014 \- May 2017\)  
+* Data Engineer \- Nokia Location and Commerce (Mar 2013 \- Jun 2014\)  
+* Senior Engineer \- Orbitz Worldwide (Jan 2010 \- Dec 2013\)  
+* Lead Developer \- Sears (Jan 2009 \- Dec 2009), Harpo (Jan 2007 \- Dec 2008),  United Airlines (Jan 2002 \- Dec 2006), MyPoints (Jan 1999 \- Dec 2001), Motorola (Jan 1996 \- Dec 1998\)
 
 # **Open Source Projects**
 
@@ -113,11 +115,6 @@ May 2017 – Mar 2018
 
 # **Education**
 
-* DePaul University  
-    Masters Program in Predictive Analytics – (partially completed)  
-* University of Illinois at Chicago  
-    Bachelor of Science in Software Engineering
+* DePaul University \- Masters Program in Predictive Analytics \- (partially completed)  
+* University of Illinois at Chicago \- Bachelor of Science in Software Engineering
 
-LinkedIn: https://www.linkedin.com/in/ted-strall-1057b44
-
-Website: https://strall.com
