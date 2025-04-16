@@ -28,3 +28,5 @@ themes/*
 
 # Ignore hugo.toml if you switch to config.toml
 hugo.toml
+
+*Zone.Identifier

@@ -6,7 +6,7 @@ Lake Zurich, IL
 
 linkedin.com/in/ted-strall-1057b44 | strall.com | github.com/tstrall
 
-Email: ted@strall.com | Phone: 847-913-7886
+Email: ted@strall.com
 
 # **Summary**
 
@@ -96,19 +96,16 @@ May 2017 \- Mar 2018
 
 # **Open Source Projects**
 
-**Adage – Config-Driven AWS Deployment Framework**  
-[github.com/tstrall/adage](https://github.com/tstrall/adage)  
+Adage \- Config-Driven AWS Deployment Framework
 
 * Modular, parameterized IaC framework for AWS  
 * Supports runtime promotion, service discovery, environment-aware deployment
 
-**Strall.com – Live Demo for Adage**  
-[strall.com](https://strall.com)  
+Strall.com \- Portfolio & Live Demo
 
 * Serverless site deployed via Adage; demonstrates real-time config resolution, CI/CD, and CloudFront setup
 
-**AWS Knowledge Base**  
-[github.com/tstrall/aws-knowledge-base](https://github.com/tstrall/aws-knowledge-base)  
+AWS Knowledge Base
 
 * Markdown-based learning system with detailed notes and certification checklists  
 * Covers AWS SAA, SAP, Developer Associate, and ML exams
