@@ -1,6 +1,6 @@
 # Ted Strall
 
-## **Cloud & Data Infrastructure Engineer**
+## **Backend Software Engineer**
 
 Lake Zurich, IL
 
@@ -10,16 +10,16 @@ Email: ted@strall.com
 
 # **Summary**
 
-Cloud & Software Infrastructure Engineer with over 15 years of experience designing and deploying high-performance, production-grade systems across AWS and hybrid environments. Proven expertise in scalable microservices, real-time data pipelines, and infrastructure-as-code. Creator of Adage, an open-source AWS deployment framework. Adept at leading complex migrations, mentoring developers, and driving cloud-native architectures using Python, Java, Kafka, Kubernetes, and CI/CD best practices. 
+Backend Software Engineer with over 15 years of experience designing and deploying high-performance, production-grade systems across AWS and hybrid environments. Proven expertise in scalable microservices, real-time data pipelines, and infrastructure-as-code. Creator of Adage, an open-source AWS deployment framework. Adept at leading complex migrations, mentoring developers, and driving cloud-native architectures using Python, Java, Kafka, Kubernetes, and CI/CD best practices. 
 
 LinkedIn: [https://www.linkedin.com/in/ted-strall-1057b44](https://www.linkedin.com/in/ted-strall-1057b44) · Website: [https://strall.com](https://strall.com)
 
 # **Core Skills**
 
-**Cloud & Infra:** AWS services (EC2, Lambda, CloudFront, RDS, Cognito, IAM, SageMaker, Comprehend AI), Kubernetes, Docker  
-**Data Systems:** PostgreSQL, Oracle, Kafka, Prometheus, ElasticSearch, MongoDB  
+**Cloud & Infra:** AWS services (S3, EC2, ECS, EKS, Lambda, ApiGateway, CloudFront, RDS, Cognito, IAM, SageMaker, Comprehend AI), Kubernetes, Docker  
+**Data Systems:** PostgreSQL, Oracle, Kafka, Prometheus, InfluxDB, ElasticSearch, MongoDB  
 **Languages:** Python, Java, SQL, Shell scripting  
-**CI/CD & DevOps:** Terraform, Terragrunt, CloudFormation, GitHub Actions, Jenkins, CircleCI  
+**CI/CD & DevOps:** Terraform, Terragrunt, CloudFormation, GitHub Actions, Jenkins  
 **Architecture:** Microservices architecture, event-driven design  
 **Software Engineering:** Software development, strong problem-solving skills  
 **Communication & Detail:** Excellent written and spoken communication skills, attention to detail  
