@@ -16,6 +16,9 @@ title = "Open Source Projects"
 </p>
 
 - [**Adage**: A Configuration-Driven AWS Deployment Framework](https://github.com/tstrall/adage)
+
+![Adage: A Configuration-Driven AWS Deployment Framework](/img/adage-system-diagram.png)
+
 - [aws-iac](https://github.com/tstrall/aws-iac) – Reusable Terraform modules for AWS infrastructure
 - [aws-config](https://github.com/tstrall/aws-config) – Environment-aware, version-controlled deployment config
 - [aws-lambda](https://github.com/tstrall/aws-lambda) – Lambda-based microservices using dynamic discovery
