@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "strall.com"
 theme = "PaperMod"
+enableRobotsTXT = true
 
 [params]
   author = "Ted Strall"
