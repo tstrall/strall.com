@@ -23,18 +23,7 @@ title = "AWS Certification Notes"
 - Visual diagrams
 - Long-term reference material
 
-<p style="display: flex; align-items: center; gap: 0.5em;">
-  <span>
-    I’m actively working toward several AWS certifications, including:
-  </span>
-  <img
-    class="theme-switch-logo"
-    src="/assets/logo/logo-300x300.png"
-    data-light="/assets/logo/logo-300x300.png"
-    data-dark="/assets/logo/logo-300x300-inverted.png"
-    style="width: 64px; height: 64px;"
-    alt="Strall logo">
-</p>
+I’m actively working toward several AWS certifications, including:
 
 - Solutions Architect – Associate
 - Solutions Architect – Professional

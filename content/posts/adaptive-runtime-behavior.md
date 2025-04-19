@@ -5,6 +5,8 @@ description = "This framework wasn't built for ML — but it creates the conditi
 tags = ["aws", "terraform", "devops", "automation"]
 +++
 
+![Adage: A Configuration-Driven AWS Deployment Framework](/img/adage-system-diagram.png)
+
 Open source [**Adage: Configuration-Driven AWS Deployment Framework**](https://github.com/tstrall/adage) wasn’t built as a machine learning platform — but it enables one. Because each deployed component exposes its **runtime state**, **dependencies**, and **configuration** via AWS Parameter Store, the system becomes:
 
 - Observable  

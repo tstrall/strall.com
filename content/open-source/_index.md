@@ -15,7 +15,22 @@ title = "Open Source Projects"
   </span>
 </p>
 
-- [**Adage**: A Configuration-Driven AWS Deployment Framework](https://github.com/tstrall/adage)
+- [**Karma: Infrastructure as Consequence**](https://github.com/usekarma/karma)
+
+<p style="display: flex; align-items: center; gap: 0.5em;">
+  <img
+    class="theme-switch-logo"
+    src="/assets/logo/usekarma_light_300.png"
+    data-light="/assets/logo/usekarma_light_300.png"
+    data-dark="/assets/logo/usekarma_dark_300.png"
+    style="width: 128px; height: 128px;"
+    alt="UseKarma logo">
+  <span>
+    Karma is an experimental open source system for modeling and managing infrastructure as modular, object-oriented components — where each deployment step is shaped by what came before.
+  </span>
+</p>
+
+- [**Adage: A Configuration-Driven AWS Deployment Framework**](https://github.com/tstrall/adage)
 
 ![Adage: A Configuration-Driven AWS Deployment Framework](/img/adage-system-diagram.png)
 

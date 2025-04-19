@@ -34,6 +34,7 @@ My goals with this project:
 
 ### Projects Featured on This Site
 
+- [**Karma: Infrastructure as Consequence**](https://github.com/usekarma/karma)
 - [**Adage: A Configuration-Driven AWS Deployment Framework**](https://github.com/tstrall/adage)
 - [aws-iac](https://github.com/tstrall/aws-iac) – Reusable Terraform infrastructure modules
 - [aws-config](https://github.com/tstrall/aws-config) – JSON-based environment configuration
