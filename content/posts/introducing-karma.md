@@ -5,6 +5,8 @@ date: 2025-04-18
 tags: ["infrastructure", "terraform", "aws", "devops", "config", "open source"]
 ---
 
+![Karma: Infrastructure as Consequence](/img/karma-system.drawio.png)
+
 **Karma is an experimental system that treats infrastructure not just as state — but as consequence.**
 
 ---
