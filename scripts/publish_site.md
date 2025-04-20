@@ -1,6 +1,6 @@
 ## `publish_site.py` – Hugo Site Publisher
 
-This script automates publishing a Hugo site to infrastructure created by a  Terraform component from [**aws-iac**](https://github.com/usekarma/aws-iac) (defaults to [`serverless-site`](https://github.com/usekarma/aws-iac/tree/main/components/serverless-site)).
+This script automates publishing a Hugo site to infrastructure created by a Terraform component from [**aws-iac**](https://github.com/usekarma/aws-iac) (defaults to [`serverless-site`](https://github.com/usekarma/aws-iac/tree/main/components/serverless-site)).
 
 It performs the following actions:
 
@@ -37,7 +37,7 @@ This will:
 
 ### Runtime Configuration
 
-The script expects the following SSM Parameter Store path to exist:
+The script retrieves configuration from an SSM Parameter Store path like:
 
 ```
 /iac/<component>/<nickname>/runtime
@@ -49,7 +49,18 @@ For example:
 /iac/serverless-site/test-site/runtime
 ```
 
-This parameter must be a JSON object with the following keys:
+The prefix (`/iac`) is configurable using the `IAC_PREFIX` environment variable.  
+This allows teams to use alternate namespaces (e.g. `/aws`, `/karma`, or anything else) without modifying the script.
+
+**To override:**
+
+```bash
+IAC_PREFIX=/my/custom/prefix AWS_PROFILE=dev-iac ./scripts/publish_site.py test-site
+```
+
+---
+
+The resolved parameter must contain a JSON object like this:
 
 ```json
 {
@@ -59,9 +70,9 @@ This parameter must be a JSON object with the following keys:
 }
 ```
 
-- `content_bucket_prefix`: The S3 bucket name used for hosting the site  
-- `cloudfront_distribution_id`: The ID of the CloudFront distribution to invalidate  
-- `cloudfront_distribution_domain`: (Optional) Used to display the site URL after publishing  
+- `content_bucket_prefix`: The S3 bucket used to host the site  
+- `cloudfront_distribution_id`: The CloudFront distribution to invalidate  
+- `cloudfront_distribution_domain`: *(Optional)* Used to display the site URL  
 
 ---
 
@@ -92,7 +103,3 @@ This will run Hugo and simulate the S3 sync using the `--dryrun` flag.
 - If `cloudfront_distribution_id` is missing, the script will exit with an error  
 - If `cloudfront_distribution_domain` is missing, the script will still function, but no live URL will be shown  
 - This script is intended to be run from the root of the repository  
-
----
-
-Let me know if you'd like a short help output (`--help`) example added too.

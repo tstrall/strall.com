@@ -3,9 +3,11 @@ import argparse
 import json
 import subprocess
 import sys
+import os
 
 import boto3
 
+get_prefix = lambda: os.getenv("IAC_PREFIX", "/iac")
 
 def run(cmd, dry_run=False):
     """Run a shell command with logging and error handling."""
@@ -28,7 +30,7 @@ def get_runtime(component, nickname):
         sys.exit(1)
 
     ssm = session.client("ssm", region_name=region)
-    name = f"/iac/{component}/{nickname}/runtime"
+    name = f"{get_prefix()}/{component}/{nickname}/runtime"
 
     try:
         response = ssm.get_parameter(Name=name)
