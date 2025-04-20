@@ -13,7 +13,7 @@ tags: ["infrastructure", "terraform", "aws", "devops", "config", "open source"]
 
 ## What Is Karma?
 
-Karma is a new open source project that builds on the ideas behind [Adage](https://github.com/tstrall/adage), extending them into a fully introspectable, graph-based runtime.
+Karma is a new open source project that builds on the ideas behind [Adage](https://github.com/usekarma/adage), extending them into a fully introspectable, graph-based runtime.
 
 At its core, Karma models your infrastructure as a graph of components, each defined by versioned configuration (in Git and AWS Parameter Store) and connected by runtime dependencies. Every component is:
 
@@ -83,7 +83,7 @@ You can follow progress at [github.com/usekarma](https://github.com/usekarma) or
 
 Karma would not exist without Adage — a reusable infrastructure framework for AWS that promotes clean config separation, secure IAM practices, and deployment via Terragrunt.
 
-If you're curious about how Karma fits into a real AWS deployment model, start with the [Adage deployment guide](https://github.com/tstrall/adage).
+If you're curious about how Karma fits into a real AWS deployment model, start with the [Adage deployment guide](https://github.com/usekarma/adage).
 
 ---
 
@@ -93,7 +93,7 @@ Karma is being developed transparently — and **usekarma.dev** is deployed usin
 
 If you're interested in contributing, experimenting, or just seeing what a graph-aware deployment system feels like, you can:
 
-- Fork the [Adage repos](https://github.com/tstrall/adage)  
+- Fork the [Adage repos](https://github.com/usekarma/adage)  
 - Read the [Karma Theory](/theory/) section  
 - Watch this space for more articles  
 

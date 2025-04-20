@@ -69,15 +69,15 @@ Instead of modifying Terraform every time something needs to be deployed, we sep
 
 ### How It Works: Three Repositories Working Together
 
-The **Adage** guide explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/adage)
+The **Adage** guide explains how to use the model:  👉 [View on GitHub](https://github.com/usekarma/adage)
 
 This system is built around three Git repositories:
 
-1. **Infrastructure as Code (`aws-iac`)**  👉 [View on GitHub](https://github.com/tstrall/aws-iac)
+1. **Infrastructure as Code (`aws-iac`)**  👉 [View on GitHub](https://github.com/usekarma/aws-iac)
 
-2. **Configuration (`aws-config`)**  👉 [View on GitHub](https://github.com/tstrall/aws-config)
+2. **Configuration (`aws-config`)**  👉 [View on GitHub](https://github.com/usekarma/aws-config)
 
-3. **Lambda Functions (`aws-lambda`)**  👉 [View on GitHub](https://github.com/tstrall/aws-lambda)
+3. **Lambda Functions (`aws-lambda`)**  👉 [View on GitHub](https://github.com/usekarma/aws-lambda)
 
 This separation ensures Terraform engineers focus on building, while configuration managers control deployments.
 
@@ -101,7 +101,7 @@ This separation ensures Terraform engineers focus on building, while configurati
 
 Want to implement this model? Here’s what to do next:
 
-1. Fork the [`aws-iac`](https://github.com/tstrall/aws-iac), [`aws-config`](https://github.com/tstrall/aws-config) and [`aws-lambda`](https://github.com/tstrall/aws-lambda) repositories  
+1. Fork the [`aws-iac`](https://github.com/usekarma/aws-iac), [`aws-config`](https://github.com/usekarma/aws-config) and [`aws-lambda`](https://github.com/usekarma/aws-lambda) repositories  
 2. Set up a CI/CD pipeline to sync the config repo with AWS Parameter Store  
 3. Define IAM policies to restrict changes to `/iac/.../config` entries  
 4. Deploy and test your first configuration-driven AWS environment!

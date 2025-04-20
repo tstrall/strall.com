@@ -1,6 +1,6 @@
 # strall.com
 
-This is the source code and content for [strall.com](https://strall.com) — a personal portfolio and demo hub built using my [open-source AWS automation framework](https://github.com/tstrall/adage)  **Adage**.
+This is the source code and content for [strall.com](https://strall.com) — a personal portfolio and demo hub built using my [open-source AWS automation framework](https://github.com/usekarma/adage)  **Adage**.
 
 ## Build Your Own Serverless Static Website
 
@@ -8,7 +8,7 @@ Want to create your own **serverless, HTTPS-enabled static website** on AWS?
 
 This repo is designed as a starting point for anyone who owns a domain name and wants to deploy a clean, fast, and fully serverless website using the same tools and infrastructure behind [strall.com](https://strall.com).
 
-The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/tstrall/aws-iac), configured with [`aws-config`](https://github.com/tstrall/aws-config).
+The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme and deployed to AWS using modular Terraform components from [`aws-iac`](https://github.com/usekarma/aws-iac), configured with [`aws-config`](https://github.com/usekarma/aws-config).
 
 ---
 
@@ -18,7 +18,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
 
 - **Option B: Start fresh**  
-  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
+  Create your own repo, run `hugo new site .`, and follow the [Serverless Static Website Quickstart](https://github.com/usekarma/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
 ---
 
@@ -28,7 +28,7 @@ The site is built using [Hugo](https://gohugo.io/) with the [PaperMod](https://g
 2. Follow the [Getting Started Guide](./GETTING_STARTED.md)  
 3. Add your own content (Markdown, images, custom pages)  
 4. Configure your domain (Route 53 or external)  
-5. Deploy using Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac)  
+5. Deploy using Terraform modules from [`aws-iac`](https://github.com/usekarma/aws-iac)  
 6. Optional: use provided [scripts](./scripts) to install Hugo (Linux, Mac, WSL)  
 
 ---
@@ -89,12 +89,12 @@ See [usage](https://strall.com/usage) for real-world examples from this deployme
 ## Links
 
 - [Live Site](https://strall.com)  
-- [**Adage**](https://github.com/tstrall/adage)  
-- [aws-iac GitHub Repo](https://github.com/tstrall/aws-iac)  
-- [aws-config GitHub Repo](https://github.com/tstrall/aws-config)  
+- [**Adage**](https://github.com/usekarma/adage)  
+- [aws-iac GitHub Repo](https://github.com/usekarma/aws-iac)  
+- [aws-config GitHub Repo](https://github.com/usekarma/aws-config)  
 - [Latest Article](https://strall.com/posts/config-driven-aws)  
 - [LinkedIn](https://www.linkedin.com/in/ted-strall-1057b44/)  
-- [GitHub Profile](https://github.com/tstrall)
+- [GitHub Profile](https://github.com/usekarma)
 
 ---
 
@@ -106,6 +106,6 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ## Author
 
-Built and maintained by [tstrall](https://strall.com).
+Built and maintained by [usekarma](https://strall.com).
 
 This site is part of **Adage** a larger open-source effort to define reusable AWS infrastructure and configuration strategies. Fork it, explore it, or use it as your own starting point.

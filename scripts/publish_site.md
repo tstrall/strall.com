@@ -1,6 +1,6 @@
 ## `publish_site.py` – Hugo Site Publisher
 
-This script automates publishing a Hugo site to infrastructure created by a  Terraform component from [**aws-iac**](https://github.com/tstrall/aws-iac) (defaults to [`serverless-site`](https://github.com/tstrall/aws-iac/tree/main/components/serverless-site)).
+This script automates publishing a Hugo site to infrastructure created by a  Terraform component from [**aws-iac**](https://github.com/usekarma/aws-iac) (defaults to [`serverless-site`](https://github.com/usekarma/aws-iac/tree/main/components/serverless-site)).
 
 It performs the following actions:
 

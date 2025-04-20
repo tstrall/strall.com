@@ -11,7 +11,7 @@ This guide walks you through creating your own serverless static website by fork
   - Install go and hugo
   - Run `hugo new site .`
   - Copy [`scripts/publish_site.py`](./scripts/publish_site.py) from this repo into your new repo
-  - Follow the [Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
+  - Follow the [Serverless Static Website Quickstart](https://github.com/usekarma/adage/blob/main/quickstarts/serverless-site.md) to connect it to reusable AWS infrastructure.
 
 - **Option B: Fork this repo**  
   Get a complete working Hugo site with a configured theme, helper scripts, and a live example you can deploy. Replace or delete the content as needed.
@@ -20,7 +20,7 @@ This guide walks you through creating your own serverless static website by fork
 
 ## Step 1: Fork & Rename the Repository
 
-1. [Fork this repo on GitHub](https://github.com/tstrall/strall.com/fork)
+1. [Fork this repo on GitHub](https://github.com/usekarma/strall.com/fork)
 2. On your fork’s GitHub page, click **Settings** → **Repository name**
    - Rename it to whatever you like (e.g., `my-awesome-site`)
 3. Clone your renamed repo to your local machine:
@@ -72,9 +72,9 @@ Visit [http://localhost:1313](http://localhost:1313) to see your site.
 
 ## Step 5: Deploy to AWS
 
-Use the Terraform modules from [`aws-iac`](https://github.com/tstrall/aws-iac) and configuration from [`aws-config`](https://github.com/tstrall/aws-config) to deploy to S3 + CloudFront with HTTPS and DNS support.
+Use the Terraform modules from [`aws-iac`](https://github.com/usekarma/aws-iac) and configuration from [`aws-config`](https://github.com/usekarma/aws-config) to deploy to S3 + CloudFront with HTTPS and DNS support.
 
-Refer to the [Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md) for detailed setup instructions.
+Refer to the [Serverless Static Website Quickstart](https://github.com/usekarma/adage/blob/main/quickstarts/serverless-site.md) for detailed setup instructions.
 
 ---
 

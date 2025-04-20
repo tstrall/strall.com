@@ -34,7 +34,7 @@ Terraform modules are reusable across environments and AWS accounts. They don’
 
 #### Configuration Is the Source of Truth
 
-Only components defined in the [`aws-config`](https://github.com/tstrall/aws-config) repository are eligible to be deployed. Terraform fails fast if configuration is missing. All changes to infrastructure flow through Git, enabling full visibility and auditability.
+Only components defined in the [`aws-config`](https://github.com/usekarma/aws-config) repository are eligible to be deployed. Terraform fails fast if configuration is missing. All changes to infrastructure flow through Git, enabling full visibility and auditability.
 
 ---
 
@@ -54,9 +54,9 @@ Services don’t hardcode references to other services. Instead, they resolve de
 
 Infrastructure code, configuration, and application logic are maintained in separate repositories:
 
-- [`aws-iac`](https://github.com/tstrall/aws-iac): Terraform modules  
-- [`aws-config`](https://github.com/tstrall/aws-config): Configuration (in JSON)  
-- [`aws-lambda`](https://github.com/tstrall/aws-lambda): Application and microservices  
+- [`aws-iac`](https://github.com/usekarma/aws-iac): Terraform modules  
+- [`aws-config`](https://github.com/usekarma/aws-config): Configuration (in JSON)  
+- [`aws-lambda`](https://github.com/usekarma/aws-lambda): Application and microservices  
 
 Each repo is testable and deployable independently.
 
@@ -106,7 +106,7 @@ Terraform modules support both AWS and LocalStack. This allows local testing and
 
 Systems may cache configuration data locally for performance. If a failure occurs (e.g., database connection error), the system re-checks AWS Parameter Store before failing—enabling dynamic reconfiguration and fast cutover support.
 
-For more technical details, see the [**Adage** Design Principles reference on GitHub](https://github.com/tstrall/adage/blob/main/design-principles/README.md).
+For more technical details, see the [**Adage** Design Principles reference on GitHub](https://github.com/usekarma/adage/blob/main/design-principles/README.md).
 
 ---
 
@@ -125,15 +125,15 @@ These principles are already enabling patterns like:
 
 The architecture is publicly available across these GitHub repositories
 
-The **Adage** guide explains how to use the model:  👉 [View on GitHub](https://github.com/tstrall/adage)
+The **Adage** guide explains how to use the model:  👉 [View on GitHub](https://github.com/usekarma/adage)
 
 This system is built around three Git repositories:
 
-1. **Infrastructure as Code (`aws-iac`)**  👉 [View on GitHub](https://github.com/tstrall/aws-iac)
+1. **Infrastructure as Code (`aws-iac`)**  👉 [View on GitHub](https://github.com/usekarma/aws-iac)
 
-2. **Configuration (`aws-config`)**  👉 [View on GitHub](https://github.com/tstrall/aws-config)
+2. **Configuration (`aws-config`)**  👉 [View on GitHub](https://github.com/usekarma/aws-config)
 
-3. **Lambda Functions (`aws-lambda`)**  👉 [View on GitHub](https://github.com/tstrall/aws-lambda)
+3. **Lambda Functions (`aws-lambda`)**  👉 [View on GitHub](https://github.com/usekarma/aws-lambda)
 
 ---
 

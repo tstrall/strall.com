@@ -3,7 +3,7 @@
  ted@strall.com  
  [www.linkedin.com/in/ted-strall-1057b44](http://www.linkedin.com/in/ted-strall-1057b44)  
  [https://www.strall.com](https://www.strall.com)  
- [https://github.com/tstrall/adage](https://github.com/tstrall/adage)  
+ [https://github.com/usekarma/adage](https://github.com/usekarma/adage)  
  Lake Zurich, IL, USA
 
 ---

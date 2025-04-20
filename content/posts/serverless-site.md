@@ -13,7 +13,7 @@ draft: false
 
 What if you could deploy a secure, fast, fully serverless website on AWS using just a JSON config file — and know exactly how it works under the hood?
 
-That’s the idea behind [**Adage:** A Configuration-Driven AWS Deployment Framework](https://github.com/tstrall/adage) that separates your infrastructure, your config, and your application code into distinct, composable layers.
+That’s the idea behind [**Adage:** A Configuration-Driven AWS Deployment Framework](https://github.com/usekarma/adage) that separates your infrastructure, your config, and your application code into distinct, composable layers.
 
 In this guide, you'll see how to go from zero to live in a few minutes using the `serverless-site` component — and how this approach gives you clarity, repeatability, and control without locking you into someone else's boilerplate.
 
@@ -111,11 +111,11 @@ Your config remains in Git and Parameter Store for future use.
 
 ## Try It Yourself
 
-1. Fork the [Adage repos](https://github.com/tstrall/adage)  
+1. Fork the [Adage repos](https://github.com/usekarma/adage)  
 2. Create a config for your project  
 3. Deploy your first live component  
 4. Build from there
 
 To see the full quickstart and details, visit:
 
-[Serverless Static Website Quickstart](https://github.com/tstrall/adage/blob/main/quickstarts/serverless-site.md)
+[Serverless Static Website Quickstart](https://github.com/usekarma/adage/blob/main/quickstarts/serverless-site.md)
