@@ -2,7 +2,7 @@
 title = "strall.com"
 +++
 
-This site serves as a working demo of open source [**Adage:** A Configuration-Driven AWS Deployment Framework](https://github.com/usekarma/adage) — built for flexibility, reuse, and minimal friction. It’s the same configuration-driven infrastructure I use to manage cloud projects and publish content with zero overhead.
+[**Looking for HTTPS, CDN, and static hosting and email forwarding**](/posts/serverless-site/) — all on the **[AWS Free Tier](https://aws.amazon.com/free/)?**
 
 <p style="display: flex; align-items: center; gap: 0.5em;">
   <span>
@@ -18,6 +18,6 @@ This site serves as a working demo of open source [**Adage:** A Configuration-Dr
     alt="Strall logo">
 </p>
 
-[**Looking for HTTPS, CDN, and static hosting and email forwarding**](/posts/serverless-site/) — all on the **[AWS Free Tier](https://aws.amazon.com/free/)?**
+This site serves as a working demo of open source [**Adage:** A Configuration-Driven AWS Deployment Framework](https://adage.usekarma.dev/) — built for flexibility, reuse, and minimal friction. It’s the same configuration-driven infrastructure I use to manage cloud projects and publish content with zero overhead.
 
 {{< logo-switch-script >}}
