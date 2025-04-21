@@ -13,7 +13,7 @@ tags: ["infrastructure", "terraform", "aws", "devops", "config", "open source"]
 
 ## What Is Karma?
 
-Karma is a new open source project that builds on the ideas behind [Adage](https://github.com/usekarma/adage), extending them into a fully introspectable, graph-based runtime.
+[Karma](https://usekarma.dev/) is a new open source project that builds on the ideas behind [Adage](https://adage.usekarma.dev/), extending them into a fully introspectable, graph-based runtime.
 
 At its core, Karma models your infrastructure as a graph of components, each defined by versioned configuration (in Git and AWS Parameter Store) and connected by runtime dependencies. Every component is:
 
