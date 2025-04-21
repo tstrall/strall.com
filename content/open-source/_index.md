@@ -15,7 +15,7 @@ title = "Open Source Projects"
   </span>
 </p>
 
-- [**Karma: Infrastructure as Consequence**](https://github.com/usekarma/karma)
+- [**Karma: Infrastructure as Consequence**](https://usekarma.dev/)
 
 <p style="display: flex; align-items: center; gap: 0.5em;">
   <img
@@ -30,7 +30,7 @@ title = "Open Source Projects"
   </span>
 </p>
 
-- [**Adage: A Configuration-Driven AWS Deployment Framework**](https://github.com/usekarma/adage)
+- [**Adage: A Configuration-Driven AWS Deployment Framework**](https://adage.usekarma.dev/)
 
 ![Adage: A Configuration-Driven AWS Deployment Framework](/img/adage-system-diagram.png)
 

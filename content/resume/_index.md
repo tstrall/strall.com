@@ -1,171 +1,50 @@
-**Ted Strall**  
- Backend Software Engineer  
- ted@strall.com  
- [www.linkedin.com/in/ted-strall-1057b44](http://www.linkedin.com/in/ted-strall-1057b44)  
- [https://www.strall.com](https://www.strall.com)  
- [https://github.com/usekarma/adage](https://github.com/usekarma/adage)  
- Lake Zurich, IL, USA
+Ted Strall
+Lake Zurich, IL • ted@strall.com • strall.com • usekarma.dev • github.com/usekarma • linkedin.com/in/tedstrall
 
----
+Professional Summary
+Backend and infrastructure-focused software engineer with a track record of building scalable systems, automating deployment pipelines, and architecting modular infrastructure on AWS. Creator of Adage (config-first Terraform framework) and Karma (graph-based change tracking for infrastructure). Experienced with Python, Java, SQL, Terraform, and CI/CD systems. Passionate about traceable system design, cloud-native tooling, and evolving toward ML platform engineering.
 
-### **Professional Summary**
+Experience
+Founder & Principal Engineer
+strall.com / Adage Infrastructure Studio – Lake Zurich, IL | Mar 2025 – Present
+- Built Adage, a Terraform-based system for deploying modular, multi-account AWS infrastructure with runtime-aware parameter management, identity-based access controls, and controlled switchover strategies.
+- Developed Karma, a backend system for tracking infrastructure state and lineage using Amazon Neptune, enabling queryable graph-based visibility and dependency resolution across services and environments. Designed with ML extensibility in mind, including lineage modeling, anomaly tracking, and graph-based queryability.
+- Deployed strall.com, usekarma.dev, and adage.usekarma.dev as production-grade, serverless web applications using S3, CloudFront, ACM, Lambda, and Route 53 with full CI/CD pipelines.
+- Created and maintain the github.com/usekarma GitHub organization, which hosts open-source infrastructure tools including Adage and Karma.
+- Designed APIs and configuration schemas to enable runtime promotion, rollback, and traceability — key backend components for platform resilience and observability.
 
-Backend Software Engineer with over 15 years of experience designing and deploying high-performance, production-grade systems across AWS and hybrid environments. Proven expertise in scalable microservices architecture, real-time data pipelines, and infrastructure-as-code. Creator of Adage, an open-source AWS deployment framework. Adept at leading complex migrations, mentoring developers, and driving cloud-native architectures using Python, Java, Kafka, Kubernetes, and CI/CD best practices. Strong problem-solving skills, excellent written and spoken communication skills, and attention to detail.
+Data Engineer / DevOps Architect
+Sparksoft (via TISTA) – Remote | Jul 2023 – Feb 2025
+- Automated infrastructure delivery across development, staging, and production environments using Terraform, Jenkins, and modular templates aligned to organizational security controls.
+- Led the migration of high-volume data systems from Oracle to Aurora PostgreSQL, including schema conversion, DMS replication, validation automation, and performance tuning.
+- Built secure, identity-aware deployment flows using AWS IAM, SSM, Secrets Manager, and centralized configuration files.
+- Maintained infrastructure components with high uptime and availability; implemented runtime config switching and validated deployments to ensure service resilience and auditability.
+- Reviewed and refactored shared Terraform modules to enforce consistency, reduce duplication, and improve reliability across distributed teams.
 
----
+Senior Data Engineer / DevOps Specialist
+TISTA Science and Technology – Remote | Jun 2019 – Jul 2023
+- Designed and deployed end-to-end automation for infrastructure provisioning, data pipelines, and environment configuration for federal healthcare systems.
+- Implemented reusable Terraform modules and CI/CD workflows for AWS-based workloads; integrated Jenkins with Secrets Manager and Parameter Store for secure deployments.
+- Led cross-team efforts to standardize environment bootstrapping, including account identity bindings and runtime parameter management.
+- Developed internal tools to track database migrations, enforce versioning, and validate application states across development and QA systems.
+- Advocated for modular architecture and reproducible infra environments across multiple program areas.
 
-### **Core Skills**
+Earlier Engineering Roles
+Various companies | 2008 – 2019
+- Held multiple engineering roles focused on backend development, data processing, infrastructure automation, and deployment tooling across industries including healthcare, higher education, and e-commerce.  
+- Designed APIs and services using Java and Python; worked extensively with Oracle and PostgreSQL for data-heavy systems.  
+- Built CI pipelines, automated operational tasks with shell scripting, and contributed to early adoption of Terraform and AWS.  
+- Developed and maintained Hadoop-based batch processing workflows for large-scale data analysis and reporting across multiple systems.  
+- Supported large-scale production environments, including one of the busiest e-commerce platforms in the U.S.  
+- Implemented and optimized NLP pipelines using Solr and custom Java text processing tools. Collaborated cross-functionally with operations, database teams, and business stakeholders to ship resilient software under real-world constraints.
 
-**Cloud & Infrastructure:**  
- AWS (S3, EC2, ECS, EKS, Lambda, API Gateway, CloudFront, RDS, Cognito, IAM, SageMaker, Comprehend), Kubernetes, Docker
+Skills
+Languages: Python, Java, HCL, Bash, SQL, Golang (learning)
+Tools: Terraform, Jenkins, Docker, GitHub Actions, Hadoop
+Cloud: AWS (S3, Lambda, IAM, SSM, CloudFront, Route 53, ACM, API Gateway)
+Practices: CI/CD, distributed systems, identity-based security, runtime safety, modular deployments, secrets management, service orchestration, API design, infrastructure resilience, graph modeling, ML extensibility
 
-**Data Systems:**  
- PostgreSQL, Oracle, Kafka, Prometheus, InfluxDB, Elasticsearch, MongoDB
-
-**Languages & Scripting:**  
- Python, Java, SQL, Shell scripting
-
-**CI/CD & DevOps:**  
- Terraform, Terragrunt, CloudFormation, GitHub Actions, Jenkins
-
-**Architecture:**  
- Microservices architecture, event-driven design, serverless systems
-
-**Soft Skills:**  
- Strong problem-solving skills, excellent written and spoken communication, attention to detail, mentoring, cross-team leadership
-
-**Industry Focus:**  
- Healthcare, government, and other regulated environments
-
----
-
-### **Work Experience**
-
-**Senior Data Engineer**  
- Sparksoft Corporation – Columbia, MD  
- Oct 2024 – Mar 2025
-
-* Led automation of 25 TB Oracle to Aurora migration using AWS SCT, DMS, and Python-based orchestration  
-* Migrated maintenance of the CMS Advanced Provider Screening data model to a team of business analysts and engineers
-
-**Senior Data Engineer**  
- TISTA Science and Technology Corporation – Rockville, MD  
- Jan 2023 – Sep 2024
-
-* Automated a complex, large-scale data migration of a 25 TB Oracle database  
-* Integrated automation and reporting developed into the standard release workflow  
-* Maintained the CMS Advanced Provider Screening data model using Erwin and custom scripting
-
-**Senior Software Engineer**  
- TISTA Science and Technology Corporation – Rockville, MD  
- Oct 2020 – Dec 2022
-
-* Worked in the Office of the CTO supporting rapid prototyping and proposal development  
-* Designed scalable AWS infrastructure catalog to streamline multi-environment deployments  
-* Implemented reusable microservice templates with CI/CD automation for secure, compliant code releases  
-* Supported Spark and analytics teams with backend data flows and orchestration improvements
-
-**Senior Software Engineer**  
- TISTA Science and Technology Corporation – Rockville, MD  
- Apr 2019 – Sep 2020
-
-* Led backend infrastructure development for the CMS Lifeline Project  
-* Automated infrastructure and pipelines using CloudFormation, Jenkins, and Spark analytics  
-* Built high-availability deployment strategies across test and production environments
-
-**Site Reliability Engineer**  
- Bank of America – Chicago, IL  
- Apr 2018 – Mar 2019
-
-* Built long-term Prometheus HDFS time-series backend with Kafka ingestion and custom alerting  
-* Designed metrics processing pipeline to support ML-generated predictions and real-time dashboards
-
-**Senior Software Engineer**  
- Uptake – Chicago, IL  
- May 2017 – Mar 2018
-
-* Maintained ingest pipelines and API infrastructure supporting predictive analytics  
-* Assisted in DevOps transition to containerized microservices and CI/CD tooling
-
-**Senior Software Engineer**  
- Finch Computing – Reston, VA  
- Jan 2014 – May 2017
-
-* Developed pipelines and services for ingesting and transforming large-scale or streaming data  
-* Rebuilt search platform backend using Apache SOLR for a subscription legal search service
-
-**Data Engineer**  
- HERE – Chicago, IL  
- Mar 2013 – Jun 2014
-
-* Delivered global data products based on analysis of historical vehicle traffic data
-
-**Senior Engineer**  
- Orbitz Worldwide – Chicago, IL  
- Jan 2010 – Dec 2013
-
-* Built Hadoop jobs to process web logs for Greenplum warehouse  
-* Developed Hive framework for analyzing latency and improving hotel search  
-* Implemented cross-platform DevOps automation and monitoring
-
-**Lead Developer**  
- Sears – Chicago, IL  
- Jan 2009 – Dec 2009
-
-* Designed and enhanced Apache SOLR-based search platform for Sears.com  
-* Led full-stack development, infrastructure migration, and performance optimization
-
-**Lead Developer**  
- Harpo – Chicago, IL  
- Jan 2007 – Dec 2008
-
-* Rebuilt Oprah.com as a dynamic, template-driven JSP site backed by Oracle XMLDB  
-* Migrated legacy content and workflows, delivering under tight and changing requirements
-
-**Senior Software Engineer**  
- United Airlines – Chicago, IL  
- Jan 2002 – Dec 2006
-
-* Delivered business-critical apps for internal ops using Java, PL/SQL, and shell scripting
-
-**Software Engineer**  
- MyPoints – Chicago, IL  
- Jan 1999 – Dec 2001
-
-* Built backend systems for a top 3 e-commerce site delivering over 1M daily personalized views  
-* Created automated ingestion and internal admin tools
-
-**Software Engineer**  
- Motorola – Chicago, IL  
- Jan 1996 – Dec 1998
-
-* Developed and supported finance apps as part of the Global Business Applications team
-
----
-
-### **Open Source Projects**
-
-**Adage – Config-Driven AWS Deployment Framework**  
- Modular, parameterized infrastructure-as-code (IaC) framework for AWS  
- Supports runtime promotion, dynamic service discovery, and environment-aware deployments
-
-**Strall.com – Portfolio & Live Demo**  
- Serverless website deployed using Adage  
- Demonstrates real-time config resolution, CI/CD pipelines, and CloudFront integration
-
-**AWS Knowledge Base**  
- Markdown-based learning system with detailed service notes and certification checklists  
- Covers AWS Certified Solutions Architect – Associate & Professional, Developer Associate, and Machine Learning exams
-
----
-
-### **Education**
-
-**DePaul University**  
- Master’s in Predictive Analytics  
- 2011 – Present
-
-**University of Illinois at Chicago**  
- Bachelor’s in Software Engineering  
- 1992 – 1995
-
+Education
+University of Illinois – B.S., Software Engineering
+DePaul University – M.S., Predictive Analytics (incomplete)
+Completed all core and advanced courses; 3 courses short of degree

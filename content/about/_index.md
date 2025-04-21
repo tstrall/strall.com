@@ -56,7 +56,7 @@ My goals with this project:
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
       <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.1c.67-1.3 2.3-2.2 3.9-2.2 4.2 0 5 2.8 5 6.4V24h-5V14.5c0-2.3-.04-5.2-3.17-5.2-3.17 0-3.65 2.5-3.65 5.1V24h-5V8z"/>
     </svg>
-    <a href="https://www.linkedin.com/in/ted-strall-1057b44/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/tedstrall/" target="_blank" rel="noopener">LinkedIn</a>
   </li>
 
   <!-- GitHub -->
