@@ -30,15 +30,25 @@ But what if we treated infrastructure modules as configurable objects, and drove
 
 Here’s how Adage brings object-oriented principles into Terraform:
 
-| Principle       | Terraform Limitation                         | Adage Pattern                                                |
-|----------------|----------------------------------------------|--------------------------------------------------------------|
-| Encapsulation  | Modules are just files, no enforced boundaries | Each component acts only on approved Parameter Store config  |
-| Composition    | Possible but repetitive                      | Components are composed from config + shared logic           |
-| Inheritance    | No support                                   | Shared behavior is factored into common modules              |
-| Polymorphism   | Requires hardcoded branching                 | Behavior switches at runtime via Parameter Store lookups     |
-| Runtime Safety | Manual validation, no promotion model        | Controlled switchover and validation built into the system   |
+- **Encapsulation**  
+  Traditional Terraform modules are just collections of files. There's no enforced boundary between what a module can or should touch.  
+  *Adage:* Each component only acts on approved config pulled from AWS Parameter Store, ensuring clean separation of responsibility.
 
-Adage isn’t just a Terraform wrapper. It’s a structural shift that moves configuration out of the codebase and into an environment-aware control plane.
+- **Composition**  
+  Terraform supports composition, but it often leads to boilerplate and inconsistent reuse.  
+  *Adage:* Components are composed from reusable shared logic and runtime-resolved configuration, minimizing duplication.
+
+- **Inheritance**  
+  Terraform has no built-in inheritance, so shared behavior must be duplicated or awkwardly wrapped.  
+  *Adage:* Common behavior is centralized in shared `common` modules and injected into components via config.
+
+- **Polymorphism**  
+  Without runtime type awareness, Terraform uses hardcoded `count`, `for_each`, or `conditional` logic to switch behavior.  
+  *Adage:* Components switch behavior dynamically based on values stored in Parameter Store, enabling runtime-dispatch-like behavior.
+
+- **Runtime Safety**  
+  Terraform doesn't have built-in promotion or rollback strategies—validation is manual and error-prone.  
+  *Adage:* Controlled switchover, input validation, and config promotion are part of the framework, giving you runtime safety by design.
 
 ---
 
