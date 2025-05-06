@@ -1,67 +1,81 @@
 # Ted Strall  
 Lake Zurich, IL  
-📧 ted@strall.com • 🌐 [strall.com](https://strall.com) • [usekarma.dev](https://usekarma.dev)  
-[GitHub](https://github.com/usekarma) • [LinkedIn](https://linkedin.com/in/tedstrall)
+ted@strall.com • [GitHub](https://github.com/usekarma) • [LinkedIn](https://linkedin.com/in/tedstrall) • [strall.com](https://strall.com) • [usekarma.dev](https://usekarma.dev)  
 
 ---
 
 ## **Professional Summary**
 
-**Senior cloud infrastructure engineer** with a focus on scalable system design, automated deployment pipelines, and secure AWS architecture.  
-Creator of **Adage** (a config-first Terraform framework) and **Karma** (a graph-based system for infrastructure lineage and dependency tracking).  
-Proven track record collaborating with developers, DBAs, data scientists, and stakeholders to deliver production systems and drive major cloud migrations.  
-Experienced with **Terraform**, **Kubernetes**, **Jenkins**, and modern AWS services including **Lambda**, **Fargate**, **EKS**, **Cognito**, and **RDS**.  
-I build infrastructure that helps teams deploy faster—with security, visibility, and minimal friction.
+**Senior cloud infrastructure engineer** with a focus on scalable system design, automated deployment pipelines, and secure AWS architecture. Creator of **Adage** and **Karma**, open-source frameworks for modular infrastructure and graph-based system tracking.
+
+Experienced with **Terraform**, **Kubernetes**, **Jenkins**, and modern AWS services including **Lambda**, **Fargate**, **EKS**, **Cognito**, and **RDS**.
 
 ---
 
 ## **Experience**
 
-### **Founder & Senior Cloud Infrastructure Engineer**  
-**strall.com / Adage Infrastructure Studio** – Lake Zurich, IL  
-*Mar 2025 – Present*
-- Built **Adage**, a Terraform-based framework for modular, multi-account AWS infrastructure with runtime-aware parameter management and identity-based access controls.
-- Developing **Karma**, a graph backend using Amazon Neptune for infrastructure lineage and dependency tracking across services and environments.
-
-### **Senior Data Engineer / DevOps Architect**  
+### **Senior Cloud Infrastructure Engineer**  
 **Sparksoft (via TISTA)** – Remote  
-*Jul 2023 – Feb 2025*
-- Led infrastructure automation across environments using **Terraform** and **Jenkins**.
-- Migrated high-throughput systems from **Oracle** to **Aurora PostgreSQL** using **DMS** and schema tools.
-- Defined identity-aware, parameter-driven deployment pipelines using **SSM**, **IAM**, and **Secrets Manager**.
-- Integrated **GitHub Actions** and Jenkins for secure CI/CD across IaC workflows.
-- Reviewed and standardized Terraform modules to improve modularity and team adoption.
-- **Collaborated with Java developers** on database integrations and deployment ownership.
-- **Worked with data scientists and DBAs** to plan and execute the Oracle-to-Aurora migration.
-- **Partnered with business analysts** to refine data models and reporting.
-- **Interfaced with stakeholders and customers** to track issues, progress, and delivery.
+*Jul 2023 – Mar 2025*
 
-### **Senior Cloud Engineer / DevOps Specialist**  
+Led multiple modernization efforts on the APS project, spanning data migration, infrastructure, and DevOps automation.
+
+- Took ownership of a complex **Oracle-to-Oracle data migration** involving 200+ interdependent SQL scripts tied to live production workloads on **EKS**.
+- Fully automated the 14-hour migration process into a single-command workflow, replacing manual **CI/CD** steps with a DevOps-standard deployment model.
+- Worked closely with data scientists and the client to identify and resolve legacy **data quality** issues ahead of the migration.
+- Took ownership of the post-migration data model and aligned it with CMS standards through direct collaboration with analysts, developers, and DBAs.
+- Re-architected the **EKS** cluster lifecycle using **Terraform**, improving reliability and consistency across environments.
+- Implemented secrets orchestration via **Ansible**, **Jenkins**, and **SSM Parameter Store**.
+- Enhanced observability with **CloudWatch** metrics, **Datadog** traces, and custom **Grafana** dashboards to surface systemic and performance issues.
+- Designed and automated a repeatable **Oracle RDS to Aurora PostgreSQL migration** framework using **Terraform**, **AWS SCT**, **DMS**, and **Git** workflows—enabling rapid conversion testing via **disposable environments**.
+- Provided **hands-on support** during production incidents, root cause analysis (**RCA**) and issue remediation.
+- Worked directly with non-technical stakeholders to surface blockers, clarify priorities, and drive delivery.
+- Stabilized infrastructure in a high-pressure production environment.
+
+
+### **Senior Cloud Engineer**  
 **TISTA Science and Technology** – Remote  
 *Jun 2019 – Jul 2023*
-- Designed and deployed full-stack AWS infrastructure using **Terraform**.
-- Managed workloads using **EKS**, **Lambda**, **API Gateway**, **S3**, **Aurora**, and **Route 53**.
-- Integrated **Cognito** for secure user authentication in serverless applications.
-- Implemented secrets orchestration via **Ansible**, **Jenkins**, and **SSM Parameter Store**.
-- Led environment bootstrapping and cross-account policy configuration for multiple teams.
-- Delivered tooling for release verification, database state tracking, and drift detection.
+
+Led AWS infrastructure delivery across multiple federal contracts, balancing strict security requirements with automation and scale.
+
+- Designed and deployed production-grade infrastructure using Terraform, covering EKS clusters, serverless APIs, and multi-account architectures on both existing contracts and new proposals.
+- Managed workloads using **EKS**, **Lambda**, **API Gateway**, **S3**, **Aurora**, and **Route 53**,  ensuring uptime across dev, test, and prod environments.
+- Defined **parameter-driven deployment pipelines** using **SSM**, **IAM**, and **Secrets Manager**, enabling secure environment separation and team handoff.
+- Integrated **Cognito** for authentication in multiple applications with complex access control needs.
+- Led the rollout of **secrets orchestration** via **Ansible**, **Jenkins**, and **SSM**, eliminating hardcoded credentials across environments.
+- Delivered repeatable bootstrapping tools and CI/CD patterns adopted across teams.
+- Supported infrastructure under active development pressure, debugging Terraform drift, IAM failures, and rollout issues in real time.
 
 ### **Earlier Roles – Backend, DevOps, Data Engineering**  
-**Examples: Uptake, Finch Computing, Bloomberg Law, Bank of America**  
+**Examples: Bank of America, Uptake, Finch Computing, Bloomberg Law**  
 *2008 – 2019*
-- Held backend, DevOps, and data engineering roles across healthcare, education, and commerce sectors.
-- Built APIs in **Java** and **Python**, supported early **Terraform** adoption, and automated deployments.
-- Maintained production-scale services and led monitoring using **Solr**, custom logs, and alert pipelines.
-- Contributed to CI/CD pipelines, scripting, and production readiness in distributed systems.
+
+Laid the foundation for my infrastructure work by owning backend systems, data pipelines, and deployment tooling across regulated and distributed environments.
+
+- At Bank of America, built Prometheus monitoring system and long-term storage backend using HDFS to retain time-series metrics at scale.
+- At Uptake, supported predictive analytics for industrial clients with Python-based data pipelines and real-time monitoring.
+- At Finch Computing, developed pipelines and services for large-scale data ingestion, transformation, and machine learning. Supported streaming workloads and real-time analytics.
+- At Bloomberg Law, rebuilt backend of Bloomberg Law’s legal search platform, migrating from legacy HP Autonomy to Apache Solr for improved relevance, scalability, and maintainability.
+
+---
+
+## **Open Source**
+
+**strall.com / Adage Infrastructure Studio** – Lake Zurich, IL  
+
+- Built [Adage](https://github.com/usekarma/adage), a Terraform-based framework for modular, multi-account AWS infrastructure with runtime-aware parameter management and identity-based access controls.
+- Developing [Karma](https://github.com/usekarma/karma), a graph backend using Amazon Neptune for infrastructure lineage and dependency tracking across services and environments.
+
+Both projects are used to prototype and document patterns I’ve developed through real-world cloud infrastructure work.
 
 ---
 
 ## **Skills**
 
-**Languages:** Python, Java, HCL, Bash, SQL  
-**Tools:** Terraform, Kubernetes, Jenkins, Ansible, Docker, GitHub Actions, Prometheus, Grafana, Datadog, Splunk, Hadoop  
 **Cloud:** AWS (Lambda, Fargate, ECS, EKS, EC2, RDS, Aurora, S3, IAM, SSM, Cognito, CloudFront, Route 53, ACM, API Gateway, SNS, SQS)  
-**Practices:** CI/CD, environment-driven deployment, identity-based access, modular IaC, runtime configuration, secure bootstrapping, distributed systems, observability, secrets management, ML extensibility
+**Languages:** Python, Java, HCL, Bash, SQL  
+**Tools:** Terraform, Kubernetes, Jenkins, Ansible, Docker, GitHub Actions, Prometheus, Grafana, Datadog, Splunk  
 
 ---
 
