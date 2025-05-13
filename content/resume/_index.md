@@ -8,7 +8,7 @@ ted@strall.com • [GitHub](https://github.com/usekarma) • [LinkedIn](https://
 
 **Cloud infrastructure engineer** with a focus on scalable system design, automated deployment pipelines, and secure AWS architecture. Creator of **Adage** and **Karma**, open-source frameworks for modular infrastructure and graph-based system tracking.
 
-Experienced with **Terraform**, **Kubernetes**, **Jenkins**, and modern AWS services including **Lambda**, **Fargate**, **EKS**, **Cognito**, and **RDS**. Support developer workflows with CI/CD, observability, and secure, automated infra that just works.
+Experienced with **Terraform**, **Kubernetes**, **Jenkins**, and modern AWS services including **Lambda**, **API Gateway**, **Fargate**, **EKS**, **IAM**, **Cognito**, and **RDS**. Support developer workflows with CI/CD, observability, and secure, automated infra.
 
 ---
 
@@ -20,13 +20,15 @@ Experienced with **Terraform**, **Kubernetes**, **Jenkins**, and modern AWS serv
 
 Led multiple modernization efforts on the APS project, spanning data migration, infrastructure, and DevOps automation.
 
+- Re-architected the **EKS** cluster lifecycle using **Terraform**, improving reliability and consistency across environments.
+- Automated ingestion of structured/unstructured logs into **Splunk** for auditing and debugging distributed ETL pipelines.
+- Integrated **Datadog** with AWS infrastructure (Lambda, EC2, RDS) to monitor performance metrics and set up custom alerts for critical services.
+- Implemented secrets orchestration via **Secrets Manager**.
+- Enhanced observability with custom **Grafana** dashboards.
 - Took ownership of a complex **Oracle-to-Oracle data migration** involving 200+ interdependent SQL scripts tied to production workloads on **EKS**.
 - Fully automated the 14-hour migration process into a single-command workflow, replacing manual **CI/CD** steps with a DevOps-standard deployment model.
 - Worked closely with data scientists and the client to identify and resolve legacy **data quality** issues ahead of the migration.
 - Took ownership of the post-migration data model and aligned it with CMS standards through direct collaboration with analysts, developers, and DBAs.
-- Re-architected the **EKS** cluster lifecycle using **Terraform**, improving reliability and consistency across environments.
-- Implemented secrets orchestration via **Secrets Manager**.
-- Enhanced observability with **CloudWatch** metrics, **Datadog** traces, and custom **Grafana** dashboards to surface systemic and performance issues.
 - Designed and automated a repeatable **Oracle RDS to Aurora PostgreSQL migration** framework using **Terraform**, **AWS SCT**, **DMS**, and **Git** workflows—enabling rapid conversion testing via **disposable environments**.
 - Provided **hands-on support** during production incidents, root cause analysis (**RCA**) and issue remediation.
 - Worked directly with non-technical stakeholders to surface blockers, clarify priorities, and drive delivery.
