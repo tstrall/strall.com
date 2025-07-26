@@ -30,11 +30,6 @@ enableRobotsTXT = true
     url = "/open-source/"
     weight = 3
   [[menu.main]]
-    identifier = "aws-exams"
-    name = "AWS Exams"
-    url = "/aws-exams/"
-    weight = 4
-  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"

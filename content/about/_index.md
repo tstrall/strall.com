@@ -40,13 +40,6 @@ My goals with this project:
 - [aws-config](https://github.com/usekarma/aws-config) – JSON-based environment configuration
 - [aws-lambda](https://github.com/usekarma/aws-lambda) – Parameter-driven Lambda microservices
 - [strall.com](https://strall.com) – Hugo + S3 + CloudFront, fully serverless
-- [aws-knowledge-base](https://github.com/tstrall/aws-knowledge-base) – Long-term learning tracker for AWS certifications
-
----
-
-### Resume
-
-{{< resume-downloads >}}
 
 ### Find Me Elsewhere
 
