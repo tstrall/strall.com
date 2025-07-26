@@ -41,6 +41,8 @@ My goals with this project:
 - [aws-lambda](https://github.com/usekarma/aws-lambda) – Parameter-driven Lambda microservices
 - [strall.com](https://strall.com) – Hugo + S3 + CloudFront, fully serverless
 
+---
+
 ### Find Me Elsewhere
 
 <ul style="list-style: none; padding-left: 0;">
