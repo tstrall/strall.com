@@ -30,3 +30,6 @@ themes/*
 hugo.toml
 
 *Zone.Identifier
+
+.venv
+
