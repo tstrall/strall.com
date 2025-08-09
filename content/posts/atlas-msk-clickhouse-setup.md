@@ -262,4 +262,4 @@ With this setup, you can capture state changes from systems already running on M
 
 **Related Posts**  
 - [Generic, Config-Driven CDC Pipeline from MongoDB to ClickHouse](/posts/mongo-cdc-clickhouse/)  
-- [First Things to Do After Capturing MongoDB Change Streams in ClickHouse](/posts/2025-08-09-clickhouse-first-steps/)  
+- [First Things to Do After Capturing MongoDB Change Streams in ClickHouse](/posts/clickhouse-first-steps/)  

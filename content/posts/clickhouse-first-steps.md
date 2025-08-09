@@ -103,4 +103,4 @@ As soon as CDC data hits ClickHouse, you can monitor, alert, and analyze — **b
 
 **Related Posts**  
 - [Generic, Config-Driven CDC Pipeline from MongoDB to ClickHouse](/posts/mongo-cdc-clickhouse/)  
-- [How to Set Up MongoDB Atlas → MSK → ClickHouse on AWS](/posts/2025-08-09-atlas-msk-clickhouse-setup/)
+- [How to Set Up MongoDB Atlas → MSK → ClickHouse on AWS](/posts/atlas-msk-clickhouse-setup/)
