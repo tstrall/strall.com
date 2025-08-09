@@ -98,3 +98,9 @@ Once you have a stream of tagged, timestamped events, you can:
 
 **Bottom line:**
 As soon as CDC data hits ClickHouse, you can monitor, alert, and analyze — **before** you invest in bigger architecture changes. It’s the shortest path from “we captured the events” to “we’re making better decisions in real time.”
+
+---
+
+**Related Posts**  
+- [Generic, Config-Driven CDC Pipeline from MongoDB to ClickHouse](/posts/mongo-cdc-clickhouse/)  
+- [How to Set Up MongoDB Atlas → MSK → ClickHouse on AWS](/posts/2025-08-09-atlas-msk-clickhouse-setup/)

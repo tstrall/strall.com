@@ -151,3 +151,9 @@ ORDER BY avg_lat DESC;
 
 **End result**:
 You can tap *any* MongoDB-backed system, stream its state changes to Kafka, and land them in ClickHouse — giving you a live, queryable history of everything that happens, with zero disruption to existing workflows.
+
+---
+
+**Related Posts**  
+- [First Things to Do After Capturing MongoDB Change Streams in ClickHouse](/posts/2025-08-09-clickhouse-first-steps/)  
+- [How to Set Up MongoDB Atlas → MSK → ClickHouse on AWS](/posts/2025-08-09-atlas-msk-clickhouse-setup/)

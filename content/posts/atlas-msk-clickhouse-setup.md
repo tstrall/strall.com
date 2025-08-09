@@ -257,3 +257,9 @@ WHERE ts >= now() - INTERVAL 15 MINUTE;
 ---
 
 With this setup, you can capture state changes from systems already running on MongoDB and make them searchable, aggregatable, and automatable on AWS — with minimal moving parts and a clean upgrade path to richer analytics and ML.
+
+---
+
+**Related Posts**  
+- [Generic, Config-Driven CDC Pipeline from MongoDB to ClickHouse](/posts/mongo-cdc-clickhouse/)  
+- [First Things to Do After Capturing MongoDB Change Streams in ClickHouse](/posts/2025-08-09-clickhouse-first-steps/)  
