@@ -1,0 +1,26 @@
+{
+  "dashboard": {
+    "title": "TicketSoon Pilot",
+    "rows": [
+      {
+        "title": "TicketSoon Score",
+        "panels": [
+          { "type": "graph", "title": "Score by Service", "targets": [ { "expr": "ticketsoon_score" } ] },
+          { "type": "table", "title": "Reasons", "targets": [ { "expr": "ticketsoon_reasons" } ] }
+        ]
+      },
+      {
+        "title": "Unified Timeline",
+        "panels": [
+          { "type": "logs", "title": "Event Stream", "targets": [ { "expr": "events_merge" } ] }
+        ]
+      },
+      {
+        "title": "Normality Check",
+        "panels": [
+          { "type": "heatmap", "title": "Verb by Hour/Day", "targets": [ { "expr": "normality_heatmap" } ] }
+        ]
+      }
+    ]
+  }
+}
