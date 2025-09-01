@@ -1,3 +1,18 @@
+---
+title: "ClickHouse DDL & Queries for TicketSoon Pilot"
+date: 2025-08-30T00:00:00Z
+draft: false
+summary: >
+  ClickHouse schema definitions and example queries for the TicketSoon pilot, integrating MongoDB CDC,
+  system events, and ServiceNow tickets into a unified event store.
+tags: ["ClickHouse", "Kafka", "MongoDB", "ServiceNow", "SRE", "Observability"]
+categories: ["Prototypes", "Infrastructure"]
+author: "Ted Strall"
+showToc: true
+cover:
+  hidden: true
+---
+
 # ClickHouse DDL and Queries for TicketSoon Pilot
 
 ## Kafka ingestion tables

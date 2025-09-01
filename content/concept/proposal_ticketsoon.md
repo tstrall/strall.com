@@ -1,3 +1,18 @@
+---
+title: "Proposal: Early Ticket Prediction via Mongo–Kafka–ClickHouse"
+date: 2025-08-30T01:00:00Z
+draft: false
+summary: >
+  Extend the MongoDB → Kafka → ClickHouse pipeline with ServiceNow ticket data to provide early-warning
+  signals for incidents, helping on-call engineers see problems before tickets are created.
+tags: ["SRE", "Kafka", "ClickHouse", "MongoDB", "ServiceNow", "Observability"]
+categories: ["Proposals", "Infrastructure"]
+author: "Ted Strall"
+showToc: true
+cover:
+  hidden: true
+---
+
 # Proposal: Early Ticket Prediction via Mongo–Kafka–ClickHouse Fabric
 
 ### One-Line Pitch

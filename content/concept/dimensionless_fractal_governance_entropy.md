@@ -1,3 +1,19 @@
+---
+title: "Dimensionless, Fractal Governance — Entropy Formulation"
+date: 2025-08-30T00:00:00Z
+draft: false
+summary: >
+  An entropy-first formulation of dimensionless, fractal governance. Uses normalized entropy,
+  transfer entropy, multiscale entropy, and entropy production as invariants to detect cascades
+  and shape safe, self-similar automation.
+tags: ["Entropy", "Governance", "Fractals", "Information Theory", "Automation"]
+categories: ["Theory", "Infrastructure"]
+author: "Ted Strall"
+showToc: true
+cover:
+  hidden: true
+---
+
 # Dimensionless, Fractal Governance — **Entropy Formulation**
 
 *A compact, implementation‑ready extension of the earlier sketch that makes **entropy** the first‑class currency of governance across logs, metrics, tickets, CDC streams, and more.*

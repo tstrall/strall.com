@@ -1,3 +1,19 @@
+---
+title: "Dimensionless, Fractal Governance"
+date: 2025-08-30T00:00:00Z
+draft: false
+summary: >
+  A mathematical sketch of governance invariants built on dimensionless normalization and fractal
+  (renormalization group) stability. Outlines entropy-free invariants, control laws, and universal
+  scaling patterns for safe automation.
+tags: ["Governance", "Entropy", "Fractals", "Information Theory", "Automation"]
+categories: ["Theory", "Infrastructure"]
+author: "Ted Strall"
+showToc: true
+cover:
+  hidden: true
+---
+
 # Mathematical sketch: Dimensionless, fractal governance
 
 ## 1) Canonical atoms and measures
