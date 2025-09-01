@@ -89,6 +89,72 @@ Ted's Law of Karma compresses a universal idea:
 \emph{shared fate is visible in the covariance of entropies}.
 This framing connects information theory, operations practice, and AI safety.
 
+\appendix
+\section*{Appendix A: Maxwell-Style Formulation of Ted's Law of Karma}
+
+\paragraph{Entropy fields.}
+For metric streams indexed by $i=1,\dots,n$, define rolling Shannon entropy $h_i(t)$ on a window. Stack as $\mathbf{h}(t)\in\mathbb{R}^n$. Let $\Sigma(t)=\mathrm{Cov}[\mathbf{h}(t)]$ denote the covariance of entropy streams.
+
+\subsection*{C1. Continuity (balance) of entropy}
+Each stream balances sources, damping, flux, and noise:
+\begin{equation}
+\dot h_i \;=\; s_i \;-\; \kappa_i h_i \;-\; \sum_{j}\nabla\!\cdot J_{ij} \;+\; \eta_i,
+\end{equation}
+where $s_i$ are exogenous sources, $\kappa_i\!\ge 0$ damping, $J_{ij}$ uncertainty flux from $j\!\to\! i$, and $\eta_i$ noise.
+
+\subsection*{C2. Constitutive law (flux response)}
+Linearizing around a baseline, flux follows gradients/couplings (Fick/Fourier analogue):
+\begin{equation}
+J_{ij} \;=\; -D_{ij}\,(h_j-h_i)
+\quad\Longrightarrow\quad
+\dot{\mathbf h} \;=\; -\alpha\,\mathbf h \;-\; \beta\,L\,\mathbf h \;+\; \mathbf s \;+\; \boldsymbol\eta,
+\end{equation}
+where $L$ is a graph Laplacian over metrics, with $\alpha,\beta\!\ge 0$.
+
+\subsection*{C3. Correlation evolution (Lyapunov dynamics)}
+Write $\dot{\mathbf h}=A\,\mathbf h+\boldsymbol\eta$ with $A=-(\alpha I+\beta L)$. Then
+\begin{equation}
+\dot{\Sigma}\;=\;A\Sigma + \Sigma A^\top + Q \;-\; \Gamma(\Sigma),
+\label{eq:lyap}
+\end{equation}
+where $Q=\mathrm{Cov}[\boldsymbol\eta]$ (drive) and $\Gamma(\Sigma)$ represents control (e.g., autoscaling/rate-limits). In discrete time:
+\begin{equation}
+\mathbf h_{t+1} \approx A_t \mathbf h_t + \boldsymbol\varepsilon_t,\qquad
+\Sigma_{t+1} \;=\; A_t \Sigma_t A_t^\top + Q_t \;-\; \Gamma_t.
+\end{equation}
+
+\subsection*{C4. Alignment law (Gauss-style)}
+Define alignment density as off-diagonal mass or via the dominant eigenvalue:
+\begin{equation}
+\rho_{\text{align}}(t) \;=\; \sum_{i\ne j} w_{ij}\,\Sigma_{ij}(t),
+\qquad
+\lambda_1(t) \;=\; \lambda_{\max}\big(\Sigma(t)\big).
+\end{equation}
+Alignment accumulates from couplings and noise, and is drained by control:
+\begin{equation}
+\frac{d}{dt}\,\rho_{\text{align}} \;=\; \Phi_{\text{coupling}}(A,\Sigma) \;+\; \mathrm{tr}(WQ)\;-\;\mathrm{tr}(W\Gamma).
+\end{equation}
+
+\subsection*{Eigenmode monitor (operational early warning)}
+Let $u_1(t)$ be the unit eigenvector for $\lambda_1(t)$. From \eqref{eq:lyap}:
+\begin{equation}
+\dot\lambda_1 \;=\; u_1^\top \dot\Sigma\, u_1 
+\;\approx\; u_1^\top\!\big(A\Sigma+\Sigma A^\top + Q - \Gamma\big)u_1.
+\end{equation}
+If the symmetric part $\mathrm{Sym}(A)=(A{+}A^\top)/2$ loses damping (critical slowing), the $A\Sigma+\Sigma A^\top$ term becomes positive, and $\lambda_1$ rises---the measurable ``karma spike.''
+
+\subsection*{Fitting recipe (discrete-time, practical)}
+\begin{enumerate}
+\item Compute $h_i(t)$: rolling Shannon entropy for each metric.
+\item Fit VAR(1): $\mathbf h_{t+1}\approx A_t \mathbf h_t + \varepsilon_t$ on a sliding window.
+\item Estimate $Q_t=\mathrm{Cov}[\varepsilon_t]$.
+\item Propagate covariance: $\Sigma_{t+1}=A_t\Sigma_tA_t^\top+Q_t$.
+\item Monitor $\lambda_1(t)$, $\mathrm{tr}(\Sigma)$, and off-diagonal mass; trigger alerts or protective bias when $\lambda_1$ spikes above baseline.
+\end{enumerate}
+
+\paragraph{Summary.}
+These equations encode Ted's Law of Karma as a dynamical system: entropy streams behave like fields, their covariances evolve by Lyapunov dynamics, and eigenvalue spikes precede shared-fate events.
+
 \begin{thebibliography}{9}
 \bibitem{Shannon1948} C. Shannon. ``A Mathematical Theory of Communication.'' Bell System Technical Journal, 1948.
 \bibitem{Hinton2023} G. Hinton. ``The Need for Maternal Instinct in AI.'' (Talks, 2023).
