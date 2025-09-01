@@ -8,6 +8,8 @@ tags: ["entropy", "karma", "information theory", "sre", "discovery"]
 # Ted’s Law of Karma
 *The covariance structure of entropy streams reveals the shared fate of interdependent systems.*
 
+📄 **Full Preprint (PDF):** [/papers/ted-law-karma.pdf](/papers/ted-law-karma.pdf)
+
 ---
 
 ## The Observation
@@ -33,3 +35,7 @@ This pattern is not confined to infrastructure. It is a universal principle:
 - **For SREs:** Tracking λ₁ and logdetΣ across entropy streams yields early warnings before incidents manifest.  
 - **For Complex Systems:** Eigenmodes of uncertainty describe how local noise amplifies into global cascades.  
 - **For Philosophy:** Karma is not mystical bookkeeping — it is interdependence, written in the language of information.
+
+---
+
+📄 **Download the full preprint:** [/papers/ted-law-karma.pdf](/papers/ted-law-karma.pdf)
