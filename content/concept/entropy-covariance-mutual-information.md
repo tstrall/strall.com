@@ -3,6 +3,7 @@ title: "Entropy Covariance and Mutual Information for System Governance"
 date: 2025-09-01
 draft: false
 tags: ["concept", "entropy", "covariance", "mutual information", "anomaly detection", "monitoring", "governance"]
+math: true
 ---
 
 ## Abstract
@@ -18,15 +19,21 @@ Preliminary results suggest that dependency-based monitoring can reduce false po
 ## Formal Background
 
 - **Entropy (Shannon, 1948):**  
-  \( H(X) = - \sum_x p(x) \log p(x) \)  
+  $$
+  H(X) = - \sum_x p(x) \log p(x)
+  $$
   Measures the uncertainty of a random variable.
 
 - **Covariance:**  
-  \( \mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] \)  
+  $$
+  \mathrm{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)]
+  $$
   Measures the linear relationship between two random variables.
 
 - **Mutual Information:**  
-  \( I(X;Y) = H(X) + H(Y) - H(X,Y) \)  
+  $$
+  I(X;Y) = H(X) + H(Y) - H(X,Y)
+  $$
   Quantifies the reduction in uncertainty about one variable given knowledge of the other.
 
 - **Transfer Entropy (Schreiber, 2000):**  
@@ -66,5 +73,3 @@ Although the terminology of *entropy covariance* is uncommon, the underlying int
 ## Distinctive Intent
 
 The novel contribution lies not in new mathematics but in **application and framing**. While prior work applies dependency measures for detection, the **intent here is governance**: embedding the monitoring of relational uncertainty directly into feedback loops of automated infrastructure. This perspective suggests a potential paradigm for **self-regulating systems**, where protective bias is operationalized through information-theoretic dependencies.
-
----
