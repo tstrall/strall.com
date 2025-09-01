@@ -18,4 +18,15 @@ clean:
 	latexmk -C || true
 	rm -f toy_example_plot.png $(PDF) *.aux *.log *.out *.toc *.bbl *.blg *.fls *.fdb_latexmk *.synctex.gz
 
-.PHONY: all fig pdf publish clean
+# build main.bbl (needed for arXiv)
+bbl:
+	pdflatex main.tex
+	bibtex main
+	pdflatex main.tex
+	pdflatex main.tex
+
+# package sources for arXiv submission
+arxiv: clean fig
+	zip ted-law-karma-arxiv.zip main.tex toy_example_plot.png
+
+.PHONY: all fig pdf publish clean arxiv

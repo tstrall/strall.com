@@ -46,3 +46,4 @@ hugo.toml
 
 # Ignore intermediate PDF (we only commit the copy to /static)
 papers/ted-law-karma/main.pdf
+papers/ted-law-karma/ted-law-karma-arxiv.zip
