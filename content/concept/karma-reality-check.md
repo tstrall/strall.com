@@ -5,8 +5,6 @@ draft: false
 tags: ["concept", "entropy", "covariance", "karma", "maternal instinct", "ai-safety", "reality-check"]
 ---
 
-# Ted’s Law of Karma — Reality Check
-
 ## What’s Real (Now)
 - **Operationalization of entropy:**  
   – Converted Shannon entropy from a static definition into a rolling time-series per metric.  
