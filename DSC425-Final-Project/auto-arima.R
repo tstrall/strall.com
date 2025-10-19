@@ -1,76 +1,137 @@
-library(forecast)
+library(readr)
 library(dplyr)
 library(ggplot2)
+library(forecast)
+
+# Load the dataset
+df <- read_csv("ETTh1.csv")
+df <- df %>% filter(date >= as.POSIXct("2017-01-01"), date < as.POSIXct("2018-01-01"))
+
+# Inspect the first few rows
+head(df)
 
 # --- 1) Build series ---
-# Plain hourly
 ot_ts  <- ts(df$OT, frequency = 24)
 
-# Multiple seasonalities: daily (24) + weekly (24*7)
-ot_msts <- msts(df$OT, seasonal.periods = c(24, 24*7))
-
-# --- 2) Auto ARIMA on msts ---
-fit_msts <- auto.arima(
-  ot_msts,
-  seasonal = TRUE,
-  stepwise = FALSE,        # thorough search
-  approximation = FALSE,   # exact AICc
-  seasonal.test = "ocsb"
-)
-summary(fit_msts)
-report(fit_msts)
-checkresiduals(fit_msts)
-Box.test(residuals(fit_msts), lag = 24,  type = "Ljung")
-Box.test(residuals(fit_msts), lag = 24*7, type = "Ljung")
-
-# --- 3) (Optional) Compare to single-seasonal ARIMA (daily only) ---
+# --- 2) Seasonal ARIMA ---
 fit_ts <- auto.arima(
   ot_ts,
   seasonal = TRUE,
-  stepwise = FALSE,
-  approximation = FALSE,
-  seasonal.test = "ocsb"
+  stepwise = TRUE,
+  approximation = TRUE,
+  seasonal.test = "ocsb",
+  max.p = 3, max.q = 3, max.P = 1, max.Q = 1, max.order = 6
 )
-AICc(fit_ts); AICc(fit_msts)
+summary(fit_ts)
+checkresiduals(fit_ts)
+Box.test(residuals(fit_ts), lag = 24,   type = "Ljung")
 
-# --- 4) Holdout comparison (last ~6 months) ---
-h <- 24 * 30 * 6
-n <- length(ot_msts)
-train_idx <- seq_len(n - h)
+# --- 3) Forecasts on a hold-out set ---
+# Hold out the last 7 days (168 hours) for evaluation
+h <- 24 * 7
+n <- length(ot_ts)
 
-y_train_msts <- ot_msts[train_idx]
-y_test       <- ot_msts[-train_idx]  # same numeric values as df$OT tail
+y_train <- window(ot_ts, end = time(ot_ts)[n - h])
+y_test  <- window(ot_ts, start = time(ot_ts)[n - h + 1])
 
-fit_train_ts   <- auto.arima(ts(as.numeric(y_train_msts), frequency = 24),
-                             seasonal = TRUE, stepwise = FALSE,
-                             approximation = FALSE, seasonal.test = "ocsb")
-
-fit_train_msts <- auto.arima(
-  msts(as.numeric(y_train_msts), seasonal.periods = c(24, 24*7)),
-  seasonal = TRUE, stepwise = FALSE, approximation = FALSE, seasonal.test = "ocsb"
+# Fit on training only (same settings)
+fit_train <- auto.arima(
+  y_train,
+  seasonal = TRUE,
+  stepwise = TRUE,
+  approximation = TRUE,
+  seasonal.test = "ocsb",
+  max.p = 3, max.q = 3, max.P = 1, max.Q = 1, max.order = 6
 )
 
-fc_ts   <- forecast(fit_train_ts,   h = h)
-fc_msts <- forecast(fit_train_msts, h = h)
+# Forecast next h hours and evaluate
+fc <- forecast(fit_train, h = h)
+acc_holdout <- accuracy(fc, y_test)
+acc_holdout
 
-# Accuracy vs holdout
-acc_ts   <- accuracy(fc_ts,   y_test)
-acc_msts <- accuracy(fc_msts, y_test)
-acc_ts
-acc_msts
-
-# --- 5) Quick visual of the better forecast ---
-better <- ifelse(acc_msts["Test set","RMSE"] < acc_ts["Test set","RMSE"], "msts", "ts")
-p_dat <- data.frame(
-  date  = df$date[(n - h + 1):n],
+# Quick plot: actual vs forecast on holdout
+plot_df <- data.frame(
+  idx    = seq_along(y_test),
   actual = as.numeric(y_test),
-  ts_hat   = as.numeric(fc_ts$mean),
-  msts_hat = as.numeric(fc_msts$mean)
+  pred   = as.numeric(fc$mean),
+  lo80   = as.numeric(fc$lower[,"80%"]),
+  hi80   = as.numeric(fc$upper[,"80%"]),
+  lo95   = as.numeric(fc$lower[,"95%"]),
+  hi95   = as.numeric(fc$upper[,"95%"])
+)
+ggplot(plot_df, aes(idx, actual)) +
+  geom_line() +
+  geom_line(aes(y = pred), linetype = 2) +
+  geom_ribbon(aes(ymin = lo80, ymax = hi80), alpha = 0.2) +
+  geom_ribbon(aes(ymin = lo95, ymax = hi95), alpha = 0.1) +
+  labs(title = "Holdout: Forecast vs Actual (last 7 days)", x = "Hour", y = "OT")
+
+# --- 4) Expanding-window backtesting ---
+
+# Backtest settings
+H <- c(1, 24, 168)          # horizons: 1-step, 1-day, 1-week
+initial_days  <- 90         # initial training window ~ 90 days
+origin_step   <- 24         # move origin by 24 hours (once per day)
+
+initial <- 24 * initial_days
+n <- length(ot_ts)
+
+# Helper: fit -> forecast for a given training vector and horizon h
+fit_forecast_h <- function(y, h) {
+  fit <- auto.arima(
+    y,
+    seasonal = TRUE,
+    stepwise = TRUE,
+    approximation = TRUE,
+    seasonal.test = "ocsb",
+    max.p = 3, max.q = 3, max.P = 1, max.Q = 1, max.order = 6
+  )
+  as.numeric(forecast(fit, h = h)$mean[h])  # return the h-step-ahead point forecast
+}
+
+# Rolling origins (expanding window): indices of the last obs in the training set
+origins <- seq(from = initial, to = n - max(H), by = origin_step)
+
+# Collect errors per horizon
+err <- lapply(H, function(hk) numeric(length(origins)))
+names(err) <- paste0("h", H)
+
+for (i in seq_along(origins)) {
+  o <- origins[i]                 # last index of training window at this origin
+  y_tr <- ot_ts[1:o]              # expanding window up to 'o'
+  # compute each horizon's forecast and error
+  for (k in seq_along(H)) {
+    hk <- H[k]
+    y_hat <- fit_forecast_h(y_tr, hk)
+    y_act <- ot_ts[o + hk]
+    err[[k]][i] <- y_act - y_hat   # error = actual - forecast
+  }
+}
+
+# Metrics
+rmse <- sapply(err, function(e) sqrt(mean(e^2, na.rm = TRUE)))
+mae  <- sapply(err, function(e) mean(abs(e), na.rm = TRUE))
+
+bt_summary <- data.frame(
+  horizon = paste0(H, "-step"),
+  RMSE = as.numeric(rmse),
+  MAE  = as.numeric(mae),
+  row.names = NULL
+)
+bt_summary
+
+# Optional: visualize rolling 24-step (1-day ahead) errors over time
+library(ggplot2)
+err24_df <- data.frame(
+  origin_idx = origins,
+  error      = err[[which(H == 24)]]
 )
 
-ggplot(p_dat, aes(date, actual)) +
+ggplot(err24_df, aes(origin_idx, error)) +
   geom_line() +
-  geom_line(aes(y = if (better=="msts") msts_hat else ts_hat),
-            linetype = 2) +
-  labs(title = paste("Forecast vs Actual (", better, " model shown)", sep=""),
-       x = "Date", y = "OT")
+  geom_hline(yintercept = 0, linetype = 3) +
+  labs(
+    title = "Expanding-window backtest: 24-step-ahead errors",
+    x = "Time index (hourly)",
+    y = "Error (actual - forecast)"
+  )
